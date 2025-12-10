@@ -19,7 +19,7 @@ $(document).ready(function() {
             return false;
         }
         // WhatsApp number (add your school's WhatsApp number with country code, e.g., 919876543210)
-        var whatsappNumber = "919876543210";
+        var whatsappNumber = "919731334399";
         var text =
             "Enquiry from School Website:%0A" +
             "Student Name: " + encodeURIComponent(studentName) + "%0A" +
