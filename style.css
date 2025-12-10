@@ -36505,3 +36505,18 @@ body.theme--dark {
     }
   }
 }
+
+
+#reviews-1 .owl-carousel .owl-stage {
+  display: flex !important;
+  align-items: stretch !important;
+}
+#reviews-1 .owl-carousel .owl-item {
+  display: flex !important;
+  height: auto !important;
+}
+#reviews-1 .review-1 {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 95% !important;
+}
