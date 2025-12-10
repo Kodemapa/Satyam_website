@@ -36520,3 +36520,11 @@ body.theme--dark {
   flex-direction: column !important;
   height: 95% !important;
 }
+#reviews-1 .review-txt {
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+#reviews-1 .author-data {
+  margin-top: auto !important;
+}
