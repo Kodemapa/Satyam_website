@@ -9,17 +9,19 @@ $(document).ready(function() {
 
     $(".contact-form").submit(function(e) {
         e.preventDefault();
-        var studentName = $(".student-name").val();
-        var email = $(".email").val();
-        var classGrade = $(".class-grade").val();
-        var phoneNumber = $(".phone-number").val();
-        var subject = $(".subject").val();
+        // Always sync hidden 'subject' input with #enquiry-type value
+        var enquiryType = $("#enquiry-type").val();
+        $("input[name='subject']").val(enquiryType);
+        var studentName = $("input[name='studentName']").val();
+        var email = $("input[name='email']").val();
+        var classGrade = $("input[name='classGrade']").val();
+        var phoneNumber = $("input[name='phoneNumber']").val();
+        var subject = $("input[name='subject']").val();
         // Basic validation
         if (!studentName || !email || !classGrade || !phoneNumber || !subject) {
             alert("Please fill all required fields.");
             return false;
         }
-        // WhatsApp number (add your school's WhatsApp number with country code, e.g., 919876543210)
         var whatsappNumber = "919731334399";
         var text =
             "Enquiry from School Website:%0A" +
