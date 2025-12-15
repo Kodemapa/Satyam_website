@@ -1056,7 +1056,7 @@
     animation: loading-center-absolute 1s infinite;
   }
   .animate-\[rotation_1s_linear_infinite\] {
-    animation: rotation 1s linear infinite;
+    animation: rotation 0.5s linear infinite;
   }
   .cursor-pointer {
     cursor: pointer;

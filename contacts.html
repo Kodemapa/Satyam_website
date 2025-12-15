@@ -36,7 +36,11 @@
     <link href="css/colors/red-theme.css" rel="alternate stylesheet" title="red-theme">
     <link href="css/colors/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
 
-    <style>
+   <style>
+      /* Force all text color to black */
+      body, body * {
+         color: #111 !important;
+      }
         /* 1. Mesh Gradient Background */
         .premium-bg {
             background-color: #f0f7ff;
@@ -90,19 +94,6 @@
             transform: translateY(-2px);
         }
 
-        /* 5. Floating Deco Elements */
-        .deco-float {
-            position: absolute;
-            z-index: 0;
-            pointer-events: none;
-            opacity: 0.6;
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
 
         /* 6. Map Overlay Card */
         .map-overlay {
@@ -281,71 +272,18 @@
 		</header>
 		<section id="contacts-1" class="pb--50 xl:!pb-[50px] inner-page-hero contacts-section division pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] premium-bg">
                       <!-- Bottom Right Animated Background Shape -->
-                      <div class="contact-animated-bg" aria-hidden="true" style="position:absolute;z-index:0;bottom:-80px;right:-120px;width:520px;height:520px;pointer-events:none;">
-                        <svg width="100%" height="100%" viewBox="0 0 520 520" fill="none">
-                           <defs>
-                              <radialGradient id="contact-bg-grad2" cx="50%" cy="50%" r="60%">
-                                 <stop offset="0%" stop-color="#e3f0ff" stop-opacity="0.7"/>
-                                 <stop offset="100%" stop-color="#1680fb" stop-opacity="0.13"/>
-                              </radialGradient>
-                           </defs>
-                           <ellipse cx="260" cy="260" rx="240" ry="200" fill="url(#contact-bg-grad2)"></ellipse>
-                        </svg>
-                      </div>
-                <!-- Premium Animated Background SVGs -->
-                <div class="contact-bg-premium" aria-hidden="true" style="position:absolute;z-index:0;top:-120px;left:-180px;width:900px;height:900px;pointer-events:none;">
-                  <svg width="100%" height="100%" viewBox="0 0 900 900" fill="none">
-                     <defs>
-                        <radialGradient id="contact-bg-main" cx="50%" cy="50%" r="60%">
-                           <stop offset="0%" stop-color="#e3f0ff" stop-opacity="0.9"/>
-                           <stop offset="100%" stop-color="#1680fb" stop-opacity="0.13"/>
-                        </radialGradient>
-                        <linearGradient id="contact-bg-shape1" x1="0" y1="0" x2="1" y2="1">
-                           <stop offset="0%" stop-color="#ffb347" stop-opacity="0.18"/>
-                           <stop offset="100%" stop-color="#1680fb" stop-opacity="0.09"/>
-                        </linearGradient>
-                        <linearGradient id="contact-bg-shape2" x1="0" y1="1" x2="1" y2="0">
-                           <stop offset="0%" stop-color="#ff5e62" stop-opacity="0.13"/>
-                           <stop offset="100%" stop-color="#1680fb" stop-opacity="0.08"/>
-                        </linearGradient>
-                     </defs>
-                     <ellipse cx="450" cy="420" rx="390" ry="340" fill="url(#contact-bg-main)"></ellipse>
-                     <ellipse cx="200" cy="200" rx="90" ry="60" fill="url(#contact-bg-shape1)" opacity="0.7"></ellipse>
-                     <ellipse cx="700" cy="300" rx="60" ry="90" fill="url(#contact-bg-shape2)" opacity="0.6"></ellipse>
-                     <circle cx="700" cy="700" r="60" fill="#1680fb" opacity="0.07"></circle>
-                     <circle cx="180" cy="700" r="40" fill="#ffb347" opacity="0.09"></circle>
-                  </svg>
-                </div>
-                <!-- Animated Background Shape -->
-                <div class="contact-animated-bg" aria-hidden="true" style="position:absolute;z-index:0;top:-80px;left:-120px;width:520px;height:520px;pointer-events:none;">
-                  <svg width="100%" height="100%" viewBox="0 0 520 520" fill="none">
-                     <defs>
-                        <radialGradient id="contact-bg-grad" cx="50%" cy="50%" r="60%">
-                           <stop offset="0%" stop-color="#e3f0ff" stop-opacity="0.7"/>
-                           <stop offset="100%" stop-color="#1680fb" stop-opacity="0.13"/>
-                        </radialGradient>
-                     </defs>
-                     <ellipse cx="260" cy="260" rx="240" ry="200" fill="url(#contact-bg-grad)"></ellipse>
-                  </svg>
-                </div>
+                <!-- Removed animated SVG background bubbles for a cleaner look -->
          
          <div class="container" style="position:relative; z-index:1;">
             
-            <div class="deco-float" style="top: -5%; right: 10%; animation-delay: 0s;">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e3f0ff"/><path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z" fill="#ffb347"/></svg>
-            </div>
-            <div class="deco-float" style="bottom: 10%; left: -5%; animation-delay: 2s;">
-                <svg width="80" height="80" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1680fb" stroke-width="1" fill="#fff" opacity="0.5"/><path d="M7 12l3 3 7-7" stroke="#1680fb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
 
             <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
                <div class="md:w-10/12 xl:w-9/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
                   <div class="section-title !text-center mb--80 xl:!mb-[80px]">
-                     <h2 class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] font-bold tracking-tight mb-0 font-Jakarta leading-tight" style="display:flex; align-items:center; justify-content:center; gap:12px;">
-                        <span style="font-size:2.5rem; animation:bounce 2s infinite ease-in-out; display:inline-block;">👋</span>
-                        <span style="background: linear-gradient(135deg, #2b3b4b 0%, #1680fb 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Let's Start a Conversation</span>
+                     <h2 class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] font-bold tracking-tight mb-0 font-Jakarta leading-tight" style="display:flex; align-items:center; justify-content:center; gap:12px; color:inherit;">
+                        <span style="color:inherit;">Let's Start a Conversation</span>
                      </h2>
-                     <p class="p-lg !text-[1.15rem] mt-5 mb-0 px-[5%] leading-relaxed text-[#5d6b7c] font-medium">
+                     <p class="p-lg !text-[1.15rem] mt-5 mb-0 px-[5%] leading-relaxed font-medium font-Jakarta" style="color:inherit;">
                         Have questions about admissions or academics? We're ready to help.<br>
                         Fill out the form below and our team will get back to you within 24 hours.
                      </p>
@@ -355,36 +293,32 @@
 
             <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] items-stretch">
                
-               <div class="lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mb-10 lg:mb-0">
+               <div class="lg:w-7/12 xl:w-7/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mb-10 lg:mb-0">
                   <div class="form-holder contact-highlight glass-card beautify-fadein tilt-element h-full" id="formCard">
                      <div class="form-header mb-8">
-                        <h4 class="text-2xl font-bold text-gray-800 mb-2">Send us a Message</h4>
-                        <div class="h-1 w-12 bg-[#1680fb] rounded-full"></div>
+                        <h4 class="text-2xl font-bold mb-2 font-Jakarta" style="color:inherit;">Send us a Message</h4>
+                        <div class="h-1 w-12 rounded-full" style="background: #e5e7eb;"></div>
                      </div>
 
                      <form name="contactform" class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] contact-form" autocomplete="on" id="contactFormEnhanced">
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
-                           <span class="input-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3137 3.134-6 7-6s7 2.6863 7 6"/></svg></span>
-                           <input type="text" name="studentName" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[1.05rem] font-medium" placeholder=" " required>
-                           <label for="student-name">Student Name*</label>
+                           <input type="text" name="studentName" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[0.75rem]" placeholder=" " required>
+                           <label for="student-name" style="font-size:0.65rem;">Student Name*</label>
                         </div>
                         
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
-                           <span class="input-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-                           <input type="email" name="email" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[1.05rem] font-medium" placeholder=" " required>
-                           <label for="email">Email Address*</label>
+                           <input type="email" name="email" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[0.75rem]" placeholder=" " required>
+                           <label for="email" style="font-size:0.65rem;">Email Address*</label>
                         </div>
                         
                         <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
-                           <span class="input-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><rect x="6" y="10" width="12" height="8" rx="2"/></svg></span>
-                           <input type="text" name="classGrade" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[1.05rem] font-medium" placeholder=" " required>
-                           <label for="class-grade">Grade/Class*</label>
+                           <input type="text" name="classGrade" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[0.75rem]" placeholder=" " required>
+                           <label for="class-grade" style="font-size:0.65rem;">Grade/Class*</label>
                         </div>
 
                         <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
-                           <span class="input-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-                           <input type="tel" name="phoneNumber" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[1.05rem] font-medium" placeholder=" " required>
-                           <label for="phone-number">Phone*</label>
+                           <input type="tel" name="phoneNumber" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a] text-[0.75rem]" placeholder=" " required>
+                           <label for="phone-number" style="font-size:0.65rem;">Phone*</label>
                         </div>
 
                         <div class="md:w-full w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper">
@@ -396,6 +330,7 @@
                                  background: #f8fbff; border-radius: 14px;
                                  border: 1px solid #eef2f6; cursor: pointer;
                                  transition: all 0.25s ease;
+                                 font-size: 0.92rem;
                               }
                               .custom-dropdown .dropdown-selected:hover { border-color: #1680fb; background:#fff; }
                               .custom-dropdown .dropdown-options {
@@ -407,35 +342,35 @@
                               }
                               @keyframes slideDown { 0% { opacity:0; transform:translateY(-10px); } 100% { opacity:1; transform:translateY(0); } }
                               .custom-dropdown .dropdown-option:hover { background: #f0f7ff; color: #1680fb; padding-left: 24px; }
-                              .custom-dropdown .dropdown-option { transition: all 0.2s; padding: 5px 14px; font-weight: 500; border-bottom: 1px solid #f9fafb; font-size: 0.97rem; }
+                              .custom-dropdown .dropdown-option { transition: all 0.2s; padding: 5px 14px; font-weight: 500; border-bottom: 1px solid #f9fafb; font-size: 0.92rem; }
                               </style>
                               <div class="dropdown-selected" tabindex="0">
                                  <span class="dropdown-icon" style="color:#1680fb; background:#e3f0ff; width:36px; height:36px; display:flex; align-items:center; justify-content:center; border-radius:10px;">
                                     <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-2a2 2 0 1 0-2-2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
                                  </span>
                                  <div class="flex flex-col ml-1">
-                                    <span class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1">Enquiry Type : </span>
-                                    <span class="dropdown-label font-bold text-gray-700 text-[1.05rem] ml-6">&nbsp;Select Option</span>
+                                    <span class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1" style="font-size:0.8rem;">Enquiry Type : </span>
+                                    <span class="dropdown-label font-bold font-Jakarta ml-6" style="font-size:0.92rem;">&nbsp;Select Option</span>
                                  </div>
                                  <span class="dropdown-arrow ml-auto text-gray-400">▼</span>
                               </div>
                               <div class="dropdown-options">
-                                 <div class="dropdown-option" data-value="Admissions"><span>📝 Admissions</span></div>
-                                 <div class="dropdown-option" data-value="Fee Structure"><span>💰 Fee Structure</span></div>
-                                 <div class="dropdown-option" data-value="Academics"><span>📚 Academics</span></div>
-                                 <div class="dropdown-option" data-value="Facilities"><span>🏟 Facilities</span></div>
-                                 <div class="dropdown-option" data-value="Transport" style="border-top:1px solid #f0f0f0;"><span>🚌 Transport Details</span></div>
-                                 <div class="dropdown-option" data-value="General"><span>❓ General Enquiry</span></div>
+                                 <div class="dropdown-option" data-value="Admissions"><span>Admissions</span></div>
+                                 <div class="dropdown-option" data-value="Fee Structure"><span>Fee Structure</span></div>
+                                 <div class="dropdown-option" data-value="Academics"><span>Academics</span></div>
+                                 <div class="dropdown-option" data-value="Facilities"><span>Facilities</span></div>
+                                 <div class="dropdown-option" data-value="Transport" style="border-top:1px solid #f0f0f0;"><span>Transport Details</span></div>
+                                 <div class="dropdown-option" data-value="General"><span>General Enquiry</span></div>
                               </div>
                               <input type="hidden" name="enquiry-type" id="enquiry-type" value="">
-                                                      <input type="hidden" name="subject" id="enquiry-type" value="">
+                              <input type="hidden" name="subject" id="enquiry-type" value="">
                            </div>
                         </div>
 
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-[10px] form-btn text-center">
-                           <button type="submit" class="btn btn--theme hover--theme submit contact-btn-animate btn-shimmer !rounded-[16px] w-full" 
-                                   style="font-size:1.15rem; padding:1.2rem 2rem; box-shadow:0 20px 40px -10px rgba(22,128,251,0.4); border:none; background: linear-gradient(135deg, #1680fb, #0f5ecc); font-weight:700; letter-spacing:0.5px;">
-                              Send Message 🚀
+                              <button type="submit" class="btn btn--theme hover--theme submit contact-btn-animate btn-shimmer !rounded-[16px] w-full font-Jakarta" 
+                                 style="font-size:0.92rem; padding:1rem 1.5rem; box-shadow:0 20px 40px -10px rgba(22,128,251,0.4); border:none; background: #1680fb; font-weight:700; letter-spacing:0.5px; color:inherit;">
+                              Send Message 
                               <span class="confetti" style="display:none;position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;"></span>
                            </button>
                         </div>
@@ -443,78 +378,22 @@
                   </div>
                </div>
                
-               <div class="lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                     <div class="lg:w-5/12 xl:w-5/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
                   <div class="map-holder h-full" style="position:relative; border-radius:24px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.08); border: 4px solid rgba(255,255,255,0.8);">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.5866079906955!2d76.95148767489763!3d15.181030985377094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb711b0b8d99c75%3A0x90ccdeb50cab800a!2sSatyam%20International%20School%20and%20P%20U%20College!5e0!3m2!1sen!2sin!4v1765367675592!5m2!1sen!2sin" width="100%" height="100%" style="border:0; min-height: 600px; filter: saturate(1.1) contrast(1.1);" allowfullscreen="" loading="lazy"></iframe>
                       
-                      <div class="map-overlay">
-                         <div style="width:44px; height:44px; background:#1680fb; border-radius:12px; display:flex; align-items:center; justify-content:center; color:white; flex-shrink:0;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                         </div>
-                         <div>
-                            <h5 style="margin:0; font-size:1rem; font-weight:700; color:#2c3e50;">Satyam International School</h5>
-                            <p style="margin:0; font-size:0.85rem; color:#7f8c8d;">Visakhapatnam, Andhra Pradesh</p>
-                         </div>
-                      </div>
                   </div>
                </div>
                
             </div>
          </div>
       </section>
-      <!-- END CONTACTS-1 -->
-      <!-- DIVIDER LINE -->
-      <hr
-         class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
-      <!-- NEWSLETTER-1
-                     ============================================= -->
-      <section id="newsletter-1" class="newsletter-section">
-         <div
-            class="newsletter-overlay py-[60px] lg:max-xl:py-[45px] md:max-lg:!text-center md:max-lg:pt-[40px] md:max-lg:!pb-[30px] md:max-lg:px-[18%] sm:max-md:pt-[50px] sm:max-md:!pb-[40px] xsm:max-sm:pt-[50px] xsm:max-sm:!pb-[40px]">
-            <div class="container">
-               <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]  items-center row-cols-1 row-cols-lg-2">
-                  <!-- NEWSLETTER TEXT -->
-                  <div class="xl:w-6/12 lg:max-xl:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
-                     <div class="newsletter-txt">
-                        <h4
-                           class="s-34 w--700 xl:!text-[2.125rem] lg:max-xl:!text-[2rem] md:max-lg:!text-[1.764705rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] xl:!mb-0 md:max-lg:!mb-[22px] md:max-lg:px-[10%] md:max-lg:py-0 sm:max-md:!text-[2.0625rem] sm:max-md:!mb-[30px] sm:max-md:px-[5%] sm:max-md:py-0 xsm:max-sm:!text-[1.75rem] xsm:max-sm:!mb-[25px] xsm:max-sm:!p-0">
-                           Don't miss Campus Events and Alerts</h4>
-                     </div>
-                  </div>
-                  <!-- NEWSLETTER FORM -->
-                  <div class="xl:w-6/12 lg:max-xl:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
-                     <form
-                        class="newsletter-form mt-[30px] pl-[15%] lg:max-xl:!mt-[25px] lg:max-xl:!pl-[8%] md:max-lg:!mt-0 md:max-lg:px-[10%] md:max-lg:py-0 sm:max-md:!px-[10%] sm:max-md:py-0 xsm:max-sm:!px-[5%] xsm:max-sm:py-0 block">
-                        <div class="input-group relative flex flex-wrap items-stretch w-full">
-                           <input type="email" autocomplete="off"
-                              class="form-control xl:!h-[54px] xl:!text-[0.975rem] lg:max-xl:!text-[0.975rem] md:max-lg:!text-[1.0625rem] bg-white border !text-[#353f4f] !font-normal shadow-none xl:!mr-3 p-[0_15px] rounded-[6px] border-solid border-[#ccc] focus:bg-white focus:shadow-none focus:border-[#1680fb] lg:max-xl:!h-[50px] md:max-lg:!h-[46px] md:max-lg:mr-[8px] placeholder:text-[#aaa] focus:[outline:0] sm:max-md:!h-[54px] sm:max-md:!text-[1.0625rem] xsm:max-sm:!h-[54px] xsm:max-sm:!text-[1.0625rem] relative flex-[1_1_auto] !w-[1%] min-w-0"
-                              placeholder="Your email address" required id="s-email">
-                           <span class="input-group-btn">
-                              <button type="submit"
-                                 class="btn btn--theme hover--theme xl:!h-[54px] xl:!text-[0.925rem] xl:!px-[1.3rem] xl:!py-[0.7rem] lg:max-xl:!h-[50px] lg:max-xl:!text-[0.925rem] lg:max-xl:!px-[1.3rem] lg:max-xl:!py-[0.7rem] md:max-lg:!h-[46px] md:max-lg:!text-[1.0625rem] md:max-lg:!px-[1.3rem] md:max-lg:!py-[0.7rem] sm:max-md:!h-[54px] sm:max-md:!text-[1.0625rem] xsm:max-sm:!h-[54px] xsm:max-sm:!text-[1.0625rem]">Subscribe
-                                 Now</button>
-                           </span>
-                        </div>
-                        <!-- Newsletter Form Notification -->
-                        <label for="s-email" class="form-notification"></label>
-                     </form>
-                  </div>
-                  <!-- END NEWSLETTER FORM -->
-               </div>
-               <!-- End row -->
-            </div>
-            <!-- End container -->
-         </div>
-         <!-- End newsletter-overlay -->
-      </section>
-      <!-- END NEWSLETTER-1 -->
-      <!-- DIVIDER LINE -->
-      <hr
-         class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
-     <!-- FOOTER-3
-					============================================= -->
-		<footer id="footer-3"
-			class=" pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] footer !pb-[50px] lg:max-xl:!pb-[35px] md:max-lg:!pb-[25px] sm:max-md:!pb-[30px] xsm:max-sm:!pb-[30px]">
+
+
+
+      <hr class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
+
+     <footer id="footer-3" class=" pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] footer !pb-[50px] lg:max-xl:!pb-[35px] md:max-lg:!pb-[25px] sm:max-md:!pb-[30px] xsm:max-sm:!pb-[30px]">
 			<div class="container">
 				<div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] ">
 					<div class="xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
