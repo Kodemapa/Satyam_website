@@ -9,16 +9,13 @@ $(document).ready(function() {
 
     $(".contact-form").submit(function(e) {
         e.preventDefault();
-        // Always sync hidden 'subject' input with #enquiry-type value
-        var enquiryType = $("#enquiry-type").val();
-        $("input[name='subject']").val(enquiryType);
         var studentName = $("input[name='studentName']").val();
         var email = $("input[name='email']").val();
         var classGrade = $("input[name='classGrade']").val();
         var phoneNumber = $("input[name='phoneNumber']").val();
-        var subject = $("input[name='subject']").val();
+        var enquiryType = $("#enquiry-type").val();
         // Basic validation
-        if (!studentName || !email || !classGrade || !phoneNumber || !subject) {
+        if (!studentName || !email || !classGrade || !phoneNumber || !enquiryType) {
             alert("Please fill all required fields.");
             return false;
         }
@@ -29,7 +26,7 @@ $(document).ready(function() {
             "Email: " + encodeURIComponent(email) + "%0A" +
             "Class/Grade: " + encodeURIComponent(classGrade) + "%0A" +
             "Phone Number: " + encodeURIComponent(phoneNumber) + "%0A" +
-            "Enquiry Type: " + encodeURIComponent(subject);
+            "Enquiry Type: " + encodeURIComponent(enquiryType);
         var waUrl = "https://wa.me/" + whatsappNumber + "?text=" + text;
         window.open(waUrl, '_blank');
         return false;
@@ -61,7 +58,7 @@ $(document).ready(function() {
                 required: true,
                 minlength: 10
             },
-            subject:{
+            enquiryType:{
                 required: true
             }
         },
@@ -79,8 +76,8 @@ $(document).ready(function() {
             phoneNumber:{
                 required: "Please enter your phone number"
             },
-            subject:{
-                required: "Please select enquiry type"
+            enquiryType:{
+                required: "Please enter enquiry type"
             }
         }
     });
