@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="elite-themes24">
-    <meta name="description" content="Satyam International School - Excellence in Education for a Brighter Future">
-    <meta name="keywords" content="Satyam International School - Excellence in Education for a Brighter Future">
+    <meta name="description" content="Mandatory Disclosure - Satyam International School">
+    <meta name="keywords" content="School, Education, CBSE, Mandatory Disclosure, Ballari">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Satyam International School - Excellence in Education for a Brighter Future</title>
+    <title>Mandatory Disclosure - Satyam International School</title>
 
     <link rel="shortcut icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
     <link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
@@ -55,58 +55,6 @@
         /* Prevents conflict between Bootstrap lists and Tailwind */
         ul { list-style: none; padding-left: 0; }
         .wsmenu-list li { list-style: none; }
-        
-        /* Accordion Styles */
-        .accordion-item {
-            transition: all 0.3s ease;
-        }
-        
-        .accordion-header {
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .accordion-header:hover {
-            background: linear-gradient(135deg, #0870b8 0%, #065a94 100%) !important;
-        }
-        
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            padding: 0 !important;
-            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
-            opacity: 0;
-        }
-        
-        .accordion-content.active {
-            max-height: 5000px;
-            padding: 2rem !important;
-            opacity: 1;
-        }
-        
-        .accordion-icon {
-            transition: transform 0.3s ease;
-        }
-        
-        .accordion-header.active .accordion-icon {
-            transform: rotate(180deg);
-        }
-        
-        /* Floating animation for accordion items */
-        @keyframes floatAccordion {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-8px);
-            }
-        }
-        
-        .accordion-item:hover {
-            animation: floatAccordion 2s ease-in-out infinite;
-            box-shadow: 0 25px 60px rgba(8, 112, 184, 0.2) !important;
-        }
     </style>
 </head>
 
@@ -122,7 +70,7 @@
             <div class="header-wrapper fixed z-[1030] top-0 inset-x-0">
                 <div class="wsmobileheader clearfix">
                     <span class="smllogo md:max-lg:!block md:max-lg:!mt-[22px] md:max-lg:!pl-[22px] sm:max-md:!block sm:max-md:!mt-[23px] sm:max-md:!pl-[18px] xsm:max-sm:!block xsm:max-sm:!mt-[23px] xsm:max-sm:!pl-[16px]">
-                        <img class="md:w-auto md:max-lg:!max-w-[inherit] md:max-lg:!max-h-[64px] sm:max-md:!w-auto sm:max-md:!max-w-[inherit] sm:max-md:!max-h-[34px] xsm:max-sm:!w-auto xsm:max-sm:!max-w-[inherit] xsm:max-sm:!max-h-[34px]" src="images/satyam logo-2.png" alt="mobile-logo">
+                        <img class="md:w-auto md:max-lg:!max-w-[inherit] md:max-lg:!max-h-[64px] sm:max-md:!w-auto sm:max-md:!max-w-[inherit] sm:max-md:!max-h-[34px] xsm:max-sm:!w-auto xsm:max-sm:!max-w-[inherit] xsm:max-sm:!max-h-[34px]" src="images/satyam logo.webp" alt="mobile-logo">
                     </span>
                     <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
                 </div>
@@ -130,11 +78,9 @@
                     <div class="wsmainwp clearfix">
                         <div class="desktoplogo">
                             <a href="index.html" class="logo-black">
-								<img class="light-theme-img w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px] inline-block"
-								src="images/satyam logo-2.png" alt="logo">
-								<img class="dark-theme-img w-auto max-w-[inherit] !max-h-[38px] lg:max-xl:!max-h-[34px]"
-									src="images/logo-magenta-white.png" alt="logo">
-							</a>
+                                <img class="light-theme-img w-auto max-w-[inherit] !max-h-[78px] lg:max-xl:!max-h-[64px] inline-block" src="images/satyam logo.webp" alt="logo">
+                                <img class="dark-theme-img w-auto max-w-[inherit] !max-h-[38px] lg:max-xl:!max-h-[34px]" src="images/logo-magenta-white.png" alt="logo">
+                            </a>
                         </div>
                         <div class="desktoplogo">
                             <a href="index.html" class="logo-white">
@@ -147,27 +93,15 @@
                                 <li aria-haspopup="true">
                                     <a href="index.html" class="h-link">Home</a>
                                 </li>
+                                <li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About us</a></li>
                                 <li aria-haspopup="true">
-                                    <a class="h-link">About us <span class="wsarrow"></span></a>
+                                    <a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
                                     <ul class="sub-menu">
-                                          <li><a href="about.html#hero">About Us</a></li>
-                                        <li><a href="about.html#about-3">Vision & Mission</a></li>
-                                        <li><a href="about.html#statistic-5">Key Achievements</a></li>
-                                        <li><a href="about.html#founder-msg">Founder's Message</a></li>
-                                        <li><a href="about.html#features-11">Our Approach</a></li>
-                                        <li><a href="about.html#team-1">Facilities</a></li>
-                                        <li><a href="about.html#chairperson-msg">Chairperson's Note</a></li>
-                                        <li><a href="about.html#director-msg">Director's Word</a></li>
-                                    </ul>
-                                </li>
-                                <li aria-haspopup="true">
-                                    <a href="#" class="h-link" onclick="return false;">Academics <span class="wsarrow"></span></a>
-                                    <ul class="sub-menu">
-                                        <li aria-haspopup="true"><a href="academics.html">Academics</a></li>
                                         <li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
+                                        <li aria-haspopup="true"><a href="careers.html">Careers</a></li>
                                         <li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
                                         <li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
-                                        <li aria-haspopup="true"><a href="team.html">Our Gallery</a></li>
+                                        <li aria-haspopup="true"><a href="team.html">Our Team</a></li>
                                     </ul>
                                 </li>
                                 <li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a></li>
@@ -198,18 +132,16 @@
                         </p>
                     </div>
                     
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
-                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="accordion-header active px-8 py-5 flex items-center justify-between bg-gradient-to-r from-theme to-theme-dark text-white cursor-pointer">
-                                <h4 class="text-lg font-bold text-white">
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
+                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
+                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">A</span>
                                     General Information
                                 </h4>
-                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
                             </div>
                             
-                            <div class="accordion-content active p-8">
+                            <div class="p-8">
                                 <div class="overflow-hidden rounded-lg border border-slate-200">
                                     <table class="w-full text-left border-collapse">
                                         <thead class="bg-theme text-white">
@@ -248,7 +180,7 @@
                                             <tr class="border-b border-slate-100 hover:bg-blue-50 transition-colors">
                                                 <td class="p-4 text-center font-bold text-theme border-r border-slate-100 bg-slate-50">6</td>
                                                 <td class="p-4 font-semibold text-slate-700 border-r border-slate-100">School Email ID</td>
-                                                <td class="p-4 font-medium">info@satyam.com</td>
+                                                <td class="p-4 font-medium">kumar.jagadeesh123@gmail.com</td>
                                             </tr>
                                             <tr class="hover:bg-blue-50 transition-colors">
                                                 <td class="p-4 text-center font-bold text-theme border-r border-slate-100 bg-slate-50">7</td>
@@ -262,17 +194,15 @@
                         </div>
                     </div>
 
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
-                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
-                                <h4 class="text-lg font-bold text-white">
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
+                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
+                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">B</span>
                                     Documents & Information
                                 </h4>
-                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
                             </div>
-                            <div class="accordion-content p-0">
+                            <div class="p-8">
                                 <div class="overflow-hidden rounded-lg border border-slate-200">
                                     <table class="w-full text-left border-collapse">
                                         <thead class="bg-theme text-white">
@@ -416,18 +346,16 @@
                         </div>
                     </div>
 
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
-                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
-                                <h4 class="text-lg font-bold text-white">
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
+                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
+                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">C</span>
                                     Result and Academics
                                 </h4>
-                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
                             </div>
                             
-                            <div class="accordion-content p-0">
+                            <div class="p-8">
                                 <div class="mb-8">
                                     <h5 class="text-lg font-bold text-slate-700 mb-4 pl-2 border-l-4 border-theme">Result Class: X</h5>
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
@@ -512,17 +440,15 @@
                     </div>
 
                     <div class="flex flex-wrap w-full">
-                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[30px]">
-                            <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
-                                <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
-                                    <h4 class="text-lg font-bold text-white">
+                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[50px]">
+                            <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
+                                <div class="px-8 py-6 border-b border-slate-100 flex items-center bg-white">
+                                    <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                                        <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">D</span>
                                         Staff (Teaching)
                                     </h4>
-                                    <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
                                 </div>
-                                <div class="accordion-content p-0">
+                                <div class="p-8">
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
                                         <table class="w-full text-left border-collapse">
                                             <thead class="bg-theme text-white">
@@ -559,17 +485,15 @@
                             </div>
                         </div>
 
-                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[30px]">
-                            <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
-                                <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
-                                    <h4 class="text-lg font-bold text-white">
+                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[50px]">
+                            <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
+                                <div class="px-8 py-6 border-b border-slate-100 flex items-center bg-white">
+                                    <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                                        <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">E</span>
                                         School Infrastructure
                                     </h4>
-                                    <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
                                 </div>
-                                <div class="accordion-content p-0">
+                                <div class="p-8">
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
                                         <table class="w-full text-left border-collapse">
                                             <thead class="bg-theme text-white">
@@ -649,7 +573,7 @@
                 <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
                     <div class="xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
                         <div class="footer-info !mb-[40px] lg:max-xl:!mb-[50px]">
-                            <img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo-2.png" alt="footer-logo">
+                            <img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo.webp" alt="footer-logo">
                         </div>
                     </div>
                     <div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
@@ -657,7 +581,7 @@
                             <h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">School</h6>
                             <ul class="foo-links clearfix">
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About Us</a></p></li>
-                                
+                                <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="careers.html">Careers</a></p></li>
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="blog-listing.html">Our Blog</a></p></li>
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="contacts.html">Contact Us</a></p></li>
                             </ul>
@@ -689,7 +613,7 @@
                         <div class="footer-links !mb-[40px] fl-4">
                             <h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Connect With Us</h6>
                             <p class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
-                                <a class="font-normal" href="mailto:info@satyam.com">info@satyam.com</a>
+                                <a class="font-normal" href="mailto:kumar.jagadeesh123@gmail.com">kumar.jagadeesh123@gmail.com</a>
                             </p>
                             <ul class="footer-socials ico-25 !text-center clearfix inline-block !m-0">
                                 <li class="float-left w-auto inline-block align-top clear-none !m-0"><a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-facebook"></span></a></li>
@@ -712,7 +636,7 @@
                         </div>
                         <div class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
                             <div class="bottom-secondary-link ico-15 text-right text-end">
-                                <p class="p-sm !mb-0"><a href="mailto:Support@kodemapa.com"> </a></p>
+                                <p class="p-sm !mb-0"><a href="mailto:Support@kodemapa.com">Made by Support@kodemapa.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -739,51 +663,6 @@
     <script src="js/custom.js"></script>
     <script src="js/changer.js"></script>
     <script src="js/styleswitch.js"></script>
-    
-    <script>
-        // Accordion functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const accordionHeaders = document.querySelectorAll('.accordion-header');
-            
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', function(e) {
-                    e.stopPropagation(); // Prevent event bubbling
-                    
-                    // Find the closest accordion-item parent
-                    const accordionItem = this.closest('.accordion-item');
-                    if (!accordionItem) return;
-                    
-                    const accordionContent = accordionItem.querySelector('.accordion-content');
-                    if (!accordionContent) return;
-                    
-                    const isActive = this.classList.contains('active');
-                    
-                    // Toggle current accordion
-                    this.classList.toggle('active');
-                    accordionContent.classList.toggle('active');
-                    
-                    // Smooth scroll animation
-                    if (!isActive) {
-                        setTimeout(() => {
-                            accordionItem.scrollIntoView({ 
-                                behavior: 'smooth', 
-                                block: 'nearest' 
-                            });
-                        }, 100);
-                    }
-                });
-            });
-            
-            // Open first accordion by default
-            if (accordionHeaders.length > 0) {
-                const firstAccordion = accordionHeaders[0].closest('.accordion-item');
-                if (firstAccordion) {
-                    accordionHeaders[0].classList.add('active');
-                    firstAccordion.querySelector('.accordion-content').classList.add('active');
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>

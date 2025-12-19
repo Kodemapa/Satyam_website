@@ -79,7 +79,58 @@
             class="loader !w-[100px] !h-[100px] inline-block relative box-border animate-[rotation_1s_linear_infinite] rounded-[50%] border-2 border-solid border-[transparent_#888] after:content-[''] after:box-border after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:border-[50px] after:border-solid after:border-[transparent_rgba(30,30,30,0.15)] after:left-2/4 after:!top-2/4 lg:max-xl:!w-[90px] lg:max-xl:!h-[90px] lg:max-xl:after:border-[45px] lg:max-xl:after:border-solid md:max-lg:!w-[90px] md:max-lg:!h-[90px] md:max-lg:after:border-[45px] md:max-lg:after:border-solid sm:max-md:!w-[80px] sm:max-md:!h-[80px] sm:max-md:after:border-[40px] sm:max-md:after:border-solid"></span>
       </div>
    </div>
-
+   <!-- STYLE SWITCHER
+                  ============================================= -->
+   <div id="stlChanger"
+      class="fixed z-[9999] !text-[15px] overflow-hidden right-[-230px] cursor-pointer transition-all duration-[400ms] ease-[ease-in-out] rounded-none top-[100px] xsm:max-sm:hidden">
+      <div class="blockChanger bgChanger min-w-[280px] min-h-[280px] !w-[230px]">
+         <!-- <a href="#"
+            class="chBut icon-xs !w-[50px] !h-[50px] !absolute z-[1000000] !text-center border [transition:all_300ms_ease-in-out] shadow-[0_0_2px_rgba(50,50,50,0.4)] pl-[2px] pr-0 py-0 rounded-[4px_0px_0px_4px] border-l-[none] border-solid border-[#ef2853] left-0 top-[30px] bg-[#ef2853]"><span
+               class="flaticon-control-panel before:content-['\f1cf'] before:!text-white before:!text-[2.15rem]"></span></a> -->
+         <div
+            class="chBody white-color !w-[230px] relative border !h-[425px] overflow-scroll overflow-x-hidden ml-[50px] rounded-[4px_0px_0px_4px] border-solid border-[#2b2e37] bg-[#2b2e37] [direction:rtl]">
+            <div class="stBlock !text-center" style="margin: 30px 20px 20px 26px;">
+               <div class="stBgs">
+                  <p
+                     class="switch !text-[18px] font-semibold tracking-[0] !mb-[20px] font-Jakarta w-full !text-white rounded px-[1.4rem] py-[0.4rem] border-2 border-solid border-white !leading-[1.6666]">
+                  </p>
+                  <p class="color--white !text-[1.125rem] font-semibold tracking-[0] !mb-[20px] font-Jakarta">Color
+                     Scheme</p>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('pink-theme', 60)"><img src="images/color-scheme/pink.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('skyblue-theme', 60)"><img src="images/color-scheme/skyblue.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('magenta-theme', 60)"><img src="images/color-scheme/magenta.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+               </div>
+            </div>
+            <div class="stBlock !text-center" style="margin: 0px 27px 25px 31px;">
+               <a class="btn rounded-[4px] btn--theme hover--theme w-full leading-none mt-[15px] !px-[1.2rem] !py-[0.65rem]"
+                  href="javascript:chooseStyle('none', 60)">Reset
+                  Color</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- END SWITCHER -->
    <!-- PAGE CONTENT
                   ============================================= -->
    <div id="page" class="page font-Jakarta">
@@ -209,9 +260,10 @@
 								
 								<!-- SIMPLE NAVIGATION LINK -->
 								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
 								</li>
 								<!-- SIGN IN LINK -->
-                                <li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="#" class="h-link">Mandatory Disclosure</a>
 								<!-- SIGN UP BUTTON -->
 								<li class="nl-simple" aria-haspopup="true">
 									<a href="contacts.html"
@@ -242,6 +294,7 @@
                      class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
                      <div class="blog-post-img pr-[15px] lg:max-xl:pr-[10px] md:max-lg:pr-0 xsm:max-sm:!mb-[30px]">
                         <img class="img-fluid rounded-[16px] " src="images/blog/CBSE-blog.jpg" alt="blog-post-image">
+                        <img class="img-fluid rounded-[16px] " src="images/blog/CBSE-blog.jpg" alt="blog-post-image">
                      </div>
                   </div>
                   <!-- BLOG POST TEXT -->
@@ -250,18 +303,23 @@
                      <div class="blog-post-txt pl-[15px] lg:max-xl:!pl-[10px] md:max-lg:!pl-0">
                         <!-- Post Tag -->
                         <!-- <span
+                        <!-- <span
                            class="post-tag block xl:!text-[0.75rem] font-semibold tracking-[0] uppercase xl:!mb-[20px] font-Jakarta lg:max-xl:!text-[0.85rem] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.85rem] md:max-lg:!mb-[12px] xsm:max-sm:!text-[0.825rem] xsm:max-sm:!mb-[14px] color--blue-400">Social
+                           Media Marketing</span> -->
                            Media Marketing</span> -->
                         <!-- Post Link -->
                         <h3
                            class="s-38 w--700 xl:!text-[2.375rem] lg:max-xl:!text-[2.25rem] md:max-lg:!text-[1.98529rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.6875rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
                            <a class="text-[#353f4f] hover:!underline" href="main-blog.html">CBSE Certification the Complete Parent's Guide to Verifying Authentic School Affiliation
+                           <a class="text-[#353f4f] hover:!underline" href="main-blog.html">CBSE Certification the Complete Parent's Guide to Verifying Authentic School Affiliation
                            </a>
                         </h3>
                         <!-- Text -->
                         <p class=" !mb-0">Choosing the right school is one of the most critical decisions you'll make for your child's future. But what if the trust you place in an institution turns out to be misplaced. 
+                        <p class=" !mb-0">Choosing the right school is one of the most critical decisions you'll make for your child's future. But what if the trust you place in an institution turns out to be misplaced. 
                         </p>
                         <!-- Post Meta -->
+                        <!-- <div class="blog-post-meta mt--30 mt-[30px]">
                         <!-- <div class="blog-post-meta mt--30 mt-[30px]">
                            <ul class="post-meta-list ico-10">
                               <li class="w-auto inline-block align-top clear-none">
@@ -277,6 +335,7 @@
                                  <p class="text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0">Apr 28, 2023</p>
                               </li>
                            </ul>
+                        </div> -->
                         </div> -->
                      </div>
                   </div>
@@ -294,22 +353,28 @@
                         <!-- BLOG POST IMAGE -->
                         <div class="blog-post-img !mb-[35px]">
                            <img class="img-fluid rounded-[16px] " src="images/blog/Struggle.png"
+                           <img class="img-fluid rounded-[16px] " src="images/blog/Struggle.png"
                               alt="blog-post-image">
                         </div>
                         <!-- BLOG POST TEXT -->
                         <div class="blog-post-txt">
                            <!-- Post Tag -->
                            <!-- <span
+                           <!-- <span
                               class="post-tag color--red-400 block xl:!text-[0.75rem] font-semibold tracking-[0] uppercase xl:!mb-[20px] font-Jakarta lg:max-xl:!text-[0.85rem] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.85rem] md:max-lg:!mb-[12px] xsm:max-sm:!text-[0.825rem] xsm:max-sm:!mb-[14px]">Product
+                              News</span> -->
                               News</span> -->
                            <!-- Post Link -->
                            <h6
                               class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
                               <a class="text-[#353f4f] hover:!underline" href="single-post.html">Struggling with JEE/NEET Preparation? Here's Why Most Students Fall Behind</a>
+                              <a class="text-[#353f4f] hover:!underline" href="single-post.html">Struggling with JEE/NEET Preparation? Here's Why Most Students Fall Behind</a>
                            </h6>
                            <!-- Text -->
                            <p class="!mb-0">Every year, over 2 million students appear for JEE and NEET exams, but less than 2% make it to their dream colleges.</p>
+                           <p class="!mb-0">Every year, over 2 million students appear for JEE and NEET exams, but less than 2% make it to their dream colleges.</p>
                            <!-- Post Meta -->
+                           <!-- <div class="blog-post-meta  mt-[20px] ">
                            <!-- <div class="blog-post-meta  mt-[20px] ">
                               <ul class="post-meta-list ico-10">
                                  <li class="w-auto inline-block align-top clear-none">
@@ -327,6 +392,7 @@
                                  </li>
                               </ul>
                            </div> -->
+                           </div> -->
                         </div>
                         <!-- END BLOG POST TEXT -->
                      </div>
@@ -338,6 +404,7 @@
                         <!-- BLOG POST IMAGE -->
                         <div class="blog-post-img !mb-[35px]">
                            <img class="img-fluid rounded-[16px] " src="images/blog/sport.jpg"
+                           <img class="img-fluid rounded-[16px] " src="images/blog/sport.jpg"
                               alt="blog-post-image">
                         </div>
                         <!-- BLOG POST TEXT -->
@@ -345,12 +412,18 @@
                            <!-- Post Tag -->
                            <!-- <span
                               class="post-tag color--green-400 block xl:!text-[0.75rem] font-semibold tracking-[0] uppercase xl:!mb-[20px] font-Jakarta lg:max-xl:!text-[0.85rem] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.85rem] md:max-lg:!mb-[12px] xsm:max-sm:!text-[0.825rem] xsm:max-sm:!mb-[14px]">Community</span> -->
+                           <!-- <span
+                              class="post-tag color--green-400 block xl:!text-[0.75rem] font-semibold tracking-[0] uppercase xl:!mb-[20px] font-Jakarta lg:max-xl:!text-[0.85rem] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.85rem] md:max-lg:!mb-[12px] xsm:max-sm:!text-[0.825rem] xsm:max-sm:!mb-[14px]">Community</span> -->
                            <!-- Post Link -->
                            <h6
                               class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
                               <a class="text-[#353f4f] hover:!underline" href="single-post2.html">More Than Just Play and the Life Changing Benefits of Sports</a>
+                              <a class="text-[#353f4f] hover:!underline" href="single-post2.html">More Than Just Play and the Life Changing Benefits of Sports</a>
                            </h6>
                            <!-- Text -->
+                           <p class="!mb-0">Many parents today face the challenge of watching their children excel academically yet struggle with essential life skills like communication, leadership, and emotional resilienc
+                           </p>
+                           
                            <p class="!mb-0">Many parents today face the challenge of watching their children excel academically yet struggle with essential life skills like communication, leadership, and emotional resilienc
                            </p>
                            
@@ -366,6 +439,7 @@
                         <div
                            class="blog-post-img !mb-[35px] md:max-lg:inline-block md:max-lg:w-6/12 md:max-lg:float-left">
                            <img class="img-fluid rounded-[16px] " src="images/blog/Leaders.jpg"
+                           <img class="img-fluid rounded-[16px] " src="images/blog/Leaders.jpg"
                               alt="blog-post-image">
                         </div>
                         <!-- BLOG POST TEXT -->
@@ -373,16 +447,21 @@
                            class="blog-post-txt md:max-lg:inline-block md:max-lg:w-6/12 md:max-lg:float-none md:max-lg:!mt-[25px] md:max-lg:!pl-[25px]">
                            <!-- Post Tag -->
                            <!-- <span
+                           <!-- <span
                               class="post-tag color--violet-400 block xl:!text-[0.75rem] font-semibold tracking-[0] uppercase xl:!mb-[20px] font-Jakarta lg:max-xl:!text-[0.85rem] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.85rem] md:max-lg:!mb-[12px] xsm:max-sm:!text-[0.825rem] xsm:max-sm:!mb-[14px]">Freelancer
+                              Tips</span> -->
                               Tips</span> -->
                            <!-- Post Link -->
                            <h6
                               class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
                               <a class="text-[#353f4f] hover:!underline" href="single-post3.html">How Our School Builds Tomorrow's Leaders: A Complete Guide to Student Personality Development</a>
+                              <a class="text-[#353f4f] hover:!underline" href="single-post3.html">How Our School Builds Tomorrow's Leaders: A Complete Guide to Student Personality Development</a>
                            </h6>
                            <!-- Text -->
                            <p class="!mb-0">As a parent, you see beyond the report card. You notice the subtle signs that reveal your child's inner world. </p>
+                           <p class="!mb-0">As a parent, you see beyond the report card. You notice the subtle signs that reveal your child's inner world. </p>
                            <!-- Post Meta -->
+                           <!-- <div class="blog-post-meta  mt-[20px] ">
                            <!-- <div class="blog-post-meta  mt-[20px] ">
                               <ul class="post-meta-list ico-10">
                                  <li class="w-auto inline-block align-top clear-none">
@@ -400,6 +479,7 @@
                                  </li>
                               </ul>
                            </div> -->
+                           </div> -->
                         </div>
                         <!-- END BLOG POST TEXT -->
                      </div>
@@ -407,6 +487,9 @@
                   <!-- END BLOG POST #3 -->
                </div>
             </div>
+            
+             
+            
             
              
             
@@ -430,6 +513,7 @@
                      <div class="newsletter-txt">
                         <h4
                            class="s-34 w--700 xl:!text-[2.125rem] lg:max-xl:!text-[2rem] md:max-lg:!text-[1.764705rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] xl:!mb-0 md:max-lg:!mb-[22px] md:max-lg:px-[10%] md:max-lg:py-0 sm:max-md:!text-[2.0625rem] sm:max-md:!mb-[30px] sm:max-md:px-[5%] sm:max-md:py-0 xsm:max-sm:!text-[1.75rem] xsm:max-sm:!mb-[25px] xsm:max-sm:!p-0">
+                           Don't miss Campus Events and Alerts</h4>
                            Don't miss Campus Events and Alerts</h4>
                      </div>
                   </div>
@@ -521,6 +605,7 @@
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="admissions.html">Admissions</a></p>
+											href="admissions.html">Admissions</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
@@ -547,26 +632,22 @@
 								class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">
 								Legal</h6>
 							<!-- Links -->
-                     <ul class="foo-links clearfix">
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
-                                 of Use</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="privacy.html">Privacy Policy</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="mandatory-disclosure.html">Mandatory Disclosure</a></p>
-                        </li>
-                        <!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="">Cookie Policy</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
-                        </li> -->
+							<ul class="foo-links clearfix">
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
+											of Use</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+											href="privacy.html">Privacy Policy</a></p>
+								</li>
+								<!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+											href="">Cookie Policy</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -582,10 +663,30 @@
 							<!-- Mail Link -->
 							<p
 								class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
-								<a class="font-normal" href="mailto:yourdomain@mail.com">info@satyam.com</a>
+								<a class="font-normal" href="mailto:yourdomain@mail.com">kumar.jagadeesh123@gmail.com</a>
 							</p>
 							<!-- Social Links -->
 							<ul class="footer-socials ico-25 !text-center clearfix inline-block !m-0">
+								<li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.facebook.com/share/14Y4Wtu4rkc/">
+                              <span class="flaticon-facebook"></span>
+                           </a>
+                        </li>
+
+                        <li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.instagram.com/satyamschoolballari?igsh=MXd3cjgzaXcwMTJpeA==">
+                              <span class="flaticon-instagram"></span>
+                           </a>
+                        </li>
+
+                        <li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.youtube.com/@satyamschoolballari">
+                              <span class="flaticon-youtube"></span>
+                           </a>
+                        </li>
 								<li class="float-left w-auto inline-block align-top clear-none !m-0">
                            <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
                               href="https://www.facebook.com/share/14Y4Wtu4rkc/">
@@ -629,6 +730,7 @@
 						<div
 							class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 							<div class="bottom-secondary-link ico-15 text-right text-end">
+								
 								
 							</div>
 						</div>

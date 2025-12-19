@@ -16,13 +16,6 @@
     <link rel="apple-touch-icon" sizes="76x76" href="images/Satyam_Icon_1.png">
     <link rel="apple-touch-icon" href="images/Satyam_Icon_1.png">
     <link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <link href="css/flaticon.css" rel="stylesheet">
     <link href="css/flaticon.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
@@ -43,22 +36,7 @@
     <link href="css/colors/red-theme.css" rel="alternate stylesheet" title="red-theme">
     <link href="css/colors/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
 
-   <script>
-      tailwind.config = {
-         theme: {
-            extend: {
-               fontFamily: {
-                  Jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
-               }
-            }
-         }
-      }
-   </script>
-
    <style>
-      ul { list-style: none; padding-left: 0; }
-      .wsmenu-list li { list-style: none; }
-
       /* Force all text color to black */
       body, body * {
          color: #111 !important;
@@ -155,11 +133,17 @@
    <div id="loading" class="loading--theme h-full w-full fixed z-[99999999] mt--0 top-0 bg-[#f5f5f9]">
       <div id="loading-center" class="absolute !h-[100px] !w-[100px] mt-[-50px] ml-[-50px] animate-[loading-center-absolute_1s_infinite] left-2/4 top-2/4">
          <span class="loader !w-[100px] !h-[100px] inline-block relative box-border animate-[rotation_1s_linear_infinite] rounded-[50%] border-2 border-solid border-[transparent_#888] after:content-[''] after:box-border after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:border-[50px] after:border-solid after:border-[transparent_rgba(30,30,30,0.15)] after:left-2/4 after:!top-2/4"></span>
+   <div id="loading" class="loading--theme h-full w-full fixed z-[99999999] mt--0 top-0 bg-[#f5f5f9]">
+      <div id="loading-center" class="absolute !h-[100px] !w-[100px] mt-[-50px] ml-[-50px] animate-[loading-center-absolute_1s_infinite] left-2/4 top-2/4">
+         <span class="loader !w-[100px] !h-[100px] inline-block relative box-border animate-[rotation_1s_linear_infinite] rounded-[50%] border-2 border-solid border-[transparent_#888] after:content-[''] after:box-border after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:border-[50px] after:border-solid after:border-[transparent_rgba(30,30,30,0.15)] after:left-2/4 after:!top-2/4"></span>
       </div>
    </div>
 
    <div id="stlChanger" class="fixed z-[9999] !text-[15px] overflow-hidden right-[-230px] cursor-pointer transition-all duration-[400ms] ease-[ease-in-out] rounded-none top-[100px] xsm:max-sm:hidden">
+
+   <div id="stlChanger" class="fixed z-[9999] !text-[15px] overflow-hidden right-[-230px] cursor-pointer transition-all duration-[400ms] ease-[ease-in-out] rounded-none top-[100px] xsm:max-sm:hidden">
       <div class="blockChanger bgChanger min-w-[280px] min-h-[280px] !w-[230px]">
+          
           
          <div
             class="chBody white-color !w-[230px] relative border !h-[425px] overflow-scroll overflow-x-hidden ml-[50px] rounded-[4px_0px_0px_4px] border-solid border-[#2b2e37] bg-[#2b2e37] [direction:rtl]">
@@ -174,60 +158,58 @@
                   <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
                   <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
                   <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <p class="color--white !text-[1.125rem] font-semibold tracking-[0] !mb-[20px] font-Jakarta">Color Scheme</p>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('pink-theme', 60)"><img src="images/color-scheme/pink.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('skyblue-theme', 60)"><img src="images/color-scheme/skyblue.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('magenta-theme', 60)"><img src="images/color-scheme/magenta.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]" href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
                </div>
             </div>
             <div class="stBlock !text-center" style="margin: 0px 27px 25px 31px;">
+               <a class="btn rounded-[4px] btn--theme hover--theme w-full leading-none mt-[15px] !px-[1.2rem] !py-[0.65rem]" href="javascript:chooseStyle('none', 60)">Reset Color</a>
                <a class="btn rounded-[4px] btn--theme hover--theme w-full leading-none mt-[15px] !px-[1.2rem] !py-[0.65rem]" href="javascript:chooseStyle('none', 60)">Reset Color</a>
             </div>
          </div>
       </div>
    </div>
-   <div id="page" class="page font-Jakarta" style="position:relative; z-index:1;">
+   <div id="page" class="page font--jakarta" style="position:relative; z-index:1;">
       <header id="header" class="white-menu navbar-dark light-hero-header white-scroll w-full block !pt-0">
 			<div class="header-wrapper fixed z-[1030] top-0 inset-x-0">
 				<div class="wsmobileheader clearfix">
-					<span class="smllogo md:max-lg:!block md:max-lg:!mt-[22px] md:max-lg:!pl-[22px] sm:max-md:!block sm:max-md:!mt-[23px] sm:max-md:!pl-[18px] xsm:max-sm:!block xsm:max-sm:!mt-[23px] xsm:max-sm:!pl-[16px]"><img class="md:w-auto  md:max-lg:!max-w-[inherit] md:max-lg:!max-h-[64px] sm:max-md:!w-auto sm:max-md:!max-w-[inherit] sm:max-md:!max-h-[34px] xsm:max-sm:!w-auto xsm:max-sm:!max-w-[inherit] xsm:max-sm:!max-h-[34px]" src="images/satyam logo-2.png" alt="mobile-logo"></span>
+					<span class="smllogo md:max-lg:!block md:max-lg:!mt-[22px] md:max-lg:!pl-[22px] sm:max-md:!block sm:max-md:!mt-[23px] sm:max-md:!pl-[18px] xsm:max-sm:!block xsm:max-sm:!mt-[23px] xsm:max-sm:!pl-[16px]"><img class="md:w-auto  md:max-lg:!max-w-[inherit] md:max-lg:!max-h-[64px] sm:max-md:!w-auto sm:max-md:!max-w-[inherit] sm:max-md:!max-h-[34px] xsm:max-sm:!w-auto xsm:max-sm:!max-w-[inherit] xsm:max-sm:!max-h-[34px]" src="images/satyam logo.webp" alt="mobile-logo"></span>
 					<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
 				</div>
 				<div class="wsmainfull menu clearfix !text-[#b1b7cd] !bg-white shadow-none !p-[6px_0] w-full h-auto z-[1031] [transition:all_450ms_ease-in-out]">
+				<div class="wsmainfull menu clearfix !text-[#b1b7cd] !bg-white shadow-none !p-[6px_0] w-full h-auto z-[1031] [transition:all_450ms_ease-in-out]">
 					<div class="wsmainwp clearfix">
 						<div class="desktoplogo">
-							<a href="index.html" class="logo-black">
-								<img class="light-theme-img w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px] inline-block"
-								src="images/satyam logo-2.png" alt="logo">
-								<img class="dark-theme-img w-auto max-w-[inherit] !max-h-[38px] lg:max-xl:!max-h-[34px]"
-									src="images/logo-magenta-white.png" alt="logo">
+							<a href="#hero-11" class="logo-black">
+								<img class="light-theme-img w-auto max-w-[inherit] !max-h-[78px] lg:max-xl:!max-h-[64px] inline-block" src="images/satyam logo.webp" alt="logo">
+								<img class="dark-theme-img w-auto max-w-[inherit] !max-h-[38px] lg:max-xl:!max-h-[34px]" src="images/logo-magenta-white.png" alt="logo">
 							</a>
 						</div>
 						<div class="desktoplogo">
-							<a href="index.html" class="logo-white">
+							<a href="#hero-11" class="logo-white">
 								<img class=" w-auto max-w-[inherit] !max-h-[38px] lg:max-xl:!max-h-[34px] inline-block" src="images/logo-white.png" alt="logo"></a>
 						</div>
 						<nav class="wsmenu clearfix">
 							<div class="overlapblackbg"></div>
 							<ul class="wsmenu-list nav-theme">
 								<li aria-haspopup="true"><a href="index.html" class="h-link">Home </span></a></li>
-                        <li aria-haspopup="true">
-                           <a class="h-link">About us <span class="wsarrow"></span></a>
-                           <ul class="sub-menu">
-                              <li><a href="about.html#hero">About Us</a></li>
-                              <li><a href="about.html#about-3">Vision & Mission</a></li>
-                              <li><a href="about.html#statistic-5">Key Achievements</a></li>
-                              <li><a href="about.html#founder-msg">Founder's Message</a></li>
-                              <li><a href="about.html#features-11">Our Approach</a></li>
-                              <li><a href="about.html#team-1">Facilities</a></li>
-                              <li><a href="about.html#chairperson-msg">Chairperson's Note</a></li>
-                              <li><a href="about.html#director-msg">Director's Word</a></li>
-                           </ul>
-                        </li>
+								<li class="nl-simple" aria-haspopup="true"><a href="about.html" class="h-link">About us</a></li>
 								<li aria-haspopup="true">
 									<a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
-                           <ul class="sub-menu">
-                              <li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
-                              <li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
-                              <li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
-                              <li aria-haspopup="true"><a href="team.html">Our Team</a></li>
-                           </ul>
+									<ul class="sub-menu">
+										<li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
+										<li aria-haspopup="true"><a href="careers.html">Careers</a></li>
+										<li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
+										<li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
+										<li aria-haspopup="true"><a href="team.html">Our Team</a></li>
+									</ul>
 								</li>
 
 								<!-- <li aria-haspopup="true" class="mg_link">
@@ -284,19 +266,43 @@
 								
 								<!-- SIMPLE NAVIGATION LINK -->
 								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
 								</li>
 								<!-- SIGN IN LINK -->
-                        <li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="#" class="h-link">Mandatory Disclosure</a>
 								<!-- SIGN UP BUTTON -->
 								<li class="nl-simple" aria-haspopup="true">
+									<a href="contacts.html" class="btn r-04 !rounded-[4px] btn--theme hover--tra-black last-link">Contact Us</a>
 									<a href="contacts.html" class="btn r-04 !rounded-[4px] btn--theme hover--tra-black last-link">Contact Us</a>
 								</li>
 							</ul>
 						</nav>
 						</div>
+						</div>
+				</div>
 				</div>
 				</div>
 		</header>
+		<section id="contacts-1" class="pb--50 xl:!pb-[50px] inner-page-hero contacts-section division pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] premium-bg">
+                      <!-- Bottom Right Animated Background Shape -->
+                <!-- Removed animated SVG background bubbles for a cleaner look -->
+         
+         <div class="container" style="position:relative; z-index:1;">
+
+            
+
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+               <div class="md:w-10/12 xl:w-9/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                  <div class="section-title !text-center mb--80 xl:!mb-[80px]">
+                     <div class="header-glass-bg" style="background:rgba(255,255,255,0.75); backdrop-filter:blur(16px) saturate(160%); -webkit-backdrop-filter:blur(16px) saturate(160%); border-radius:18px; padding:2rem 1.5rem; display:inline-block; box-shadow:0 4px 16px 0 rgba(22,128,251,0.06);">
+                        <h2 class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] font-bold tracking-tight mb-0 font-Jakarta leading-tight" style="display:flex; align-items:center; justify-content:center; gap:12px; color:inherit;">
+                           <span style="color:inherit;">Let's Start a Conversation</span>
+                        </h2>
+                        <p class="p-lg !text-[1.15rem] mt-5 mb-0 px-[5%] leading-relaxed font-medium font-Jakarta" style="color:inherit;">
+                           Have questions about admissions or academics? We're ready to help.<br>
+                           Fill out the form below and our team will get back to you within 24 hours.
+                        </p>
+                     </div>
 		<section id="contacts-1" class="pb--50 xl:!pb-[50px] inner-page-hero contacts-section division pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] premium-bg">
                       <!-- Bottom Right Animated Background Shape -->
                 <!-- Removed animated SVG background bubbles for a cleaner look -->
@@ -334,7 +340,25 @@
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
                            <input type="text" name="studentName" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
                            <label for="student-name" style="font-size:0.89rem; font-weight:700;">Student Name*</label>
+
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] items-stretch">
+               
+               <div class="lg:w-7/12 xl:w-7/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mb-10 lg:mb-0">
+                  <div class="form-holder contact-highlight glass-card beautify-fadein tilt-element h-full" id="formCard">
+                     <div class="form-header mb-8" style="padding-top:0; margin-top:0;">
+                        <h4 class="text-2xl font-bold mb-2 font-Jakarta center-message-heading" style="color:inherit; font-size:2rem; font-weight:800;">Send us a Message</h4>
+                        <div class="h-1 w-12 rounded-full" style="background: #e5e7eb;"></div>
+                     </div>
+
+                     <form name="contactform" class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] contact-form" autocomplete="on" id="contactFormEnhanced">
+                        <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
+                           <input type="text" name="studentName" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
+                           <label for="student-name" style="font-size:0.89rem; font-weight:700;">Student Name*</label>
                         </div>
+                        
+                        <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
+                           <input type="email" name="email" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
+                           <label for="email" style="font-size:0.89rem; font-weight:700;">Email Address*</label>
                         
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
                            <input type="email" name="email" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
@@ -344,7 +368,15 @@
                         <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
                            <input type="text" name="classGrade" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
                            <label for="class-grade" style="font-size:0.89rem; font-weight:700;">Grade/Class*</label>
+                        
+                        <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
+                           <input type="text" name="classGrade" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
+                           <label for="class-grade" style="font-size:0.89rem; font-weight:700;">Grade/Class*</label>
                         </div>
+
+                        <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
+                           <input type="tel" name="phoneNumber" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
+                           <label for="phone-number" style="font-size:0.89rem; font-weight:700;">Phone*</label>
 
                         <div class="w-full md:w-6/12 flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper floating-label">
                            <input type="tel" name="phoneNumber" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
@@ -356,7 +388,19 @@
                                   <input type="text" name="enquiry-type" id="enquiry-type" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
                                   <label for="enquiry-type" style="font-size:0.89rem; font-weight:700;">Enquiry Type*</label>
                               </div>
+
+                        <div class="md:w-full w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full input-wrapper">
+                              <div class="input-wrapper floating-label">
+                                  <input type="text" name="enquiry-type" id="enquiry-type" class="form-control block w-full bg-[#f8fbff] border border-[#eef2f6] text-[#2a3a4a]" style="font-size:0.7rem !important;" placeholder=" " required>
+                                  <label for="enquiry-type" style="font-size:0.89rem; font-weight:700;">Enquiry Type*</label>
+                              </div>
                         </div>
+
+                        <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-[10px] form-btn text-center">
+                              <button type="submit" class="btn btn--theme hover--theme submit contact-btn-animate !rounded-[16px] w-full font-Jakarta" 
+                                 style="font-size:0.92rem; padding:1rem 1.5rem; box-shadow:0 20px 40px -10px rgba(22,128,251,0.4); border:none; background: #1680fb; font-weight:700; letter-spacing:0.5px; color:inherit;">
+                              Send Message
+                           </button>
 
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-[10px] form-btn text-center">
                               <button type="submit" class="btn btn--theme hover--theme submit contact-btn-animate !rounded-[16px] w-full font-Jakarta" 
@@ -372,8 +416,14 @@
                   <div class="map-holder h-full" style="position:relative; border-radius:24px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.08); border: 4px solid rgba(255,255,255,0.8);">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.5866079906955!2d76.95148767489763!3d15.181030985377094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb711b0b8d99c75%3A0x90ccdeb50cab800a!2sSatyam%20International%20School%20and%20P%20U%20College!5e0!3m2!1sen!2sin!4v1765367675592!5m2!1sen!2sin" width="100%" height="100%" style="border:0; min-height: 600px; filter: saturate(1.1) contrast(1.1);" allowfullscreen="" loading="lazy"></iframe>
                       
+               
+                     <div class="lg:w-5/12 xl:w-5/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                  <div class="map-holder h-full" style="position:relative; border-radius:24px; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.08); border: 4px solid rgba(255,255,255,0.8);">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.5866079906955!2d76.95148767489763!3d15.181030985377094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb711b0b8d99c75%3A0x90ccdeb50cab800a!2sSatyam%20International%20School%20and%20P%20U%20College!5e0!3m2!1sen!2sin!4v1765367675592!5m2!1sen!2sin" width="100%" height="100%" style="border:0; min-height: 600px; filter: saturate(1.1) contrast(1.1);" allowfullscreen="" loading="lazy"></iframe>
+                      
                   </div>
                </div>
+               
                
             </div>
          </div>
@@ -384,20 +434,32 @@
       <hr class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
 
      <footer id="footer-3" class=" pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] footer !pb-[50px] lg:max-xl:!pb-[35px] md:max-lg:!pb-[25px] sm:max-md:!pb-[30px] xsm:max-sm:!pb-[30px]">
+
+
+
+      <hr class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
+
+     <footer id="footer-3" class=" pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] footer !pb-[50px] lg:max-xl:!pb-[35px] md:max-lg:!pb-[25px] sm:max-md:!pb-[30px] xsm:max-sm:!pb-[30px]">
 			<div class="container">
 				<div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] ">
 					<div class="xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
 						<div class="footer-info !mb-[40px] lg:max-xl:!mb-[50px]">
-							<img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo-2.png" alt="footer-logo">
-							<img class="footer-logo-dark hidden w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo-2.png" alt="footer-logo">
+							<img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo.webp" alt="footer-logo">
+							<img class="footer-logo-dark hidden w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]" src="images/satyam logo.webp" alt="footer-logo">
 						</div>
 					</div>
 					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 						<div class="footer-links !mb-[40px] fl-1">
+							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">School</h6>
 							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">School</h6>
 							<ul class="foo-links clearfix">
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About Us</a></p>
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About Us</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="careers.html">Careers</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="blog-listing.html">Our Blog</a></p>
@@ -409,46 +471,62 @@
 						</div>
 					</div>
 					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 						<div class="footer-links !mb-[40px] fl-2">
+							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Product</h6>
 							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Product</h6>
 							<ul class="foo-links clearfix">
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="admissions.html">Admissions</a></p>
+											href="admissions.html">Admissions</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="team.html">Team</a></p>
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="team.html">Team</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="reviews.html">Testimonials</a></p>
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="reviews.html">Testimonials</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="contacts.html">Call us</a></p>
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="contacts.html">Call us</a></p>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+					<div class="sm:w-4/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-2/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 						<div class="footer-links !mb-[40px] fl-3 lg:max-xl:!pl-[28%]">
+							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Legal</h6>
 							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Legal</h6>
 							<ul class="foo-links clearfix">
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="terms.html">Terms of Use</a></p>
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="terms.html">Terms of Use</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Privacy Policy</a></p>
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Privacy Policy</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="">Cookie Policy</a></p>
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="">Cookie Policy</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
 								</li> -->
+								</li> -->
 							</ul>
 						</div>
 					</div>
 					<div class="sm:w-6/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
+					<div class="sm:w-6/12 md:max-lg:w-3/12 lg:max-xl:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
 						<div class="footer-links !mb-[40px] fl-4">
+							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Connect With Us</h6>
+							<p class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
+								<a class="font-normal" href="mailto:info@satyam.com">info@satyam.com</a>
 							<h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">Connect With Us</h6>
 							<p class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
 								<a class="font-normal" href="mailto:info@satyam.com">info@satyam.com</a>
@@ -458,26 +536,40 @@
 								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-twitter"></span></a></li>
 								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-github"></span></a></li>
 								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-dribbble"></span></a></li>
+								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-facebook"></span></a></li>
+								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-twitter"></span></a></li>
+								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-github"></span></a></li>
+								<li class=" float-left w-auto inline-block align-top clear-none !m-0"><a class=" block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]" href="#"><span class="flaticon-dribbble"></span></a></li>
 							</ul>
 						</div>
 					</div>
 					</div>
 				<hr class=" mt-[30px] !mb-[50px] lg:max-xl:!mt-[10px] lg:max-xl:lg:!mb-[35px] md:max-lg:!mt-[5px] md:max-lg:!mb-[25px] sm:max-md:!mt-[15px] sm:max-md:!mb-[30px] xsm:max-sm:!mt-[5px] xsm:max-sm:!mb-[30px]">
+					</div>
+				<hr class=" mt-[30px] !mb-[50px] lg:max-xl:!mt-[10px] lg:max-xl:lg:!mb-[35px] md:max-lg:!mt-[5px] md:max-lg:!mb-[25px] sm:max-md:!mt-[15px] sm:max-md:!mb-[30px] xsm:max-sm:!mt-[5px] xsm:max-sm:!mb-[30px]">
 				<div class="bottom-footer">
 					<div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]  row-cols-1 row-cols-md-2 items-center">
 						<div class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+						<div class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 							<div class="footer-copyright">
+								<p class="p-sm !mb-0">© 2025 Kode Mapa EdTech LLP. <span>All Rights Reserved</span></p>
 								<p class="p-sm !mb-0">© 2025 Kode Mapa EdTech LLP. <span>All Rights Reserved</span></p>
 							</div>
 						</div>
 						<div class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+						<div class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 							<div class="bottom-secondary-link ico-15 text-right text-end">
+								
 								
 							</div>
 						</div>
 					</div>
 					</div>
+					</div>
 				</div>
+			</footer>
+		</div>
+
 			</footer>
 		</div>
 
@@ -492,6 +584,83 @@
    <script src="js/custom.js"></script>
    <script src="js/changer.js"></script>
    <script defer src="js/styleswitch.js"></script>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+       
+       // 1. 3D Tilt Effect for Contact Card
+       const card = document.getElementById('formCard');
+       if(card) {
+           card.addEventListener('mousemove', function(e) {
+               // Only apply tilt on larger screens where it is side-by-side
+               if(window.innerWidth > 992) {
+                   const rect = card.getBoundingClientRect();
+                   const x = e.clientX - rect.left;
+                   const y = e.clientY - rect.top;
+                   
+                   const centerX = rect.width / 2;
+                   const centerY = rect.height / 2;
+                   
+                   const rotateX = ((y - centerY) / centerY) * -1.5; 
+                   const rotateY = ((x - centerX) / centerX) * 1.5;
+                   
+                   card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+               }
+           });
+           
+           card.addEventListener('mouseleave', function() {
+               card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+           });
+       }
+
+       // 2. Parallax Background Effect
+       document.addEventListener('mousemove', function(e) {
+           document.querySelectorAll('.parallax-layer').forEach(layer => {
+               const speed = layer.getAttribute('data-speed');
+               const x = (window.innerWidth - e.pageX * speed) / 100;
+               const y = (window.innerHeight - e.pageY * speed) / 100;
+               layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+           });
+       });
+
+       // 3. Dropdown Logic
+       const dropdown = document.getElementById('custom-dropdown');
+       if(dropdown) {
+           const selected = dropdown.querySelector('.dropdown-selected');
+           const options = dropdown.querySelector('.dropdown-options');
+           const label = dropdown.querySelector('.dropdown-label');
+           const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+           
+           selected.addEventListener('click', () => {
+               const isOpen = options.style.display === 'block';
+               options.style.display = isOpen ? 'none' : 'block';
+               selected.classList.toggle('active', !isOpen);
+               dropdown.classList.toggle('open', !isOpen);
+           });
+
+           dropdown.querySelectorAll('.dropdown-option').forEach(opt => {
+               opt.addEventListener('click', () => {
+                   label.textContent = opt.textContent;
+                   label.style.color = '#2a3a4a';
+                   hiddenInput.value = opt.getAttribute('data-value');
+                   options.style.display = 'none';
+                   selected.classList.remove('active');
+                   dropdown.classList.remove('open');
+               });
+           });
+
+           document.addEventListener('click', (e) => {
+               if (!dropdown.contains(e.target)) {
+                   options.style.display = 'none';
+                   selected.classList.remove('active');
+                   dropdown.classList.remove('open');
+               }
+           });
+       }
+
+         // Confetti on Submit removed
+   });
+   </script>
 
    <script>
    document.addEventListener('DOMContentLoaded', function() {

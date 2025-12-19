@@ -203,7 +203,56 @@
             class="loader !w-[100px] !h-[100px] inline-block relative box-border animate-[rotation_1s_linear_infinite] rounded-[50%] border-2 border-solid border-[transparent_#888] after:content-[''] after:box-border after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:border-[50px] after:border-solid after:border-[transparent_rgba(30,30,30,0.15)] after:left-2/4 after:!top-2/4 lg:max-xl:!w-[90px] lg:max-xl:!h-[90px] lg:max-xl:after:border-[45px] lg:max-xl:after:border-solid md:max-lg:!w-[90px] md:max-lg:!h-[90px] md:max-lg:after:border-[45px] md:max-lg:after:border-solid sm:max-md:!w-[80px] sm:max-md:!h-[80px] sm:max-md:after:border-[40px] sm:max-md:after:border-solid"></span>
       </div>
    </div>
-
+   <!-- STYLE SWITCHER
+                  ============================================= -->
+   <div id="stlChanger"
+      class="fixed z-[9999] !text-[15px] overflow-hidden right-[-230px] cursor-pointer transition-all duration-[400ms] ease-[ease-in-out] rounded-none top-[100px] xsm:max-sm:hidden">
+      <div class="blockChanger bgChanger min-w-[280px] min-h-[280px] !w-[230px]">
+          
+         <div
+            class="chBody white-color !w-[230px] relative border !h-[425px] overflow-scroll overflow-x-hidden ml-[50px] rounded-[4px_0px_0px_4px] border-solid border-[#2b2e37] bg-[#2b2e37] [direction:rtl]">
+            <div class="stBlock !text-center" style="margin: 30px 20px 20px 26px;">
+               <div class="stBgs">
+                  <p
+                     class="switch !text-[18px] font-semibold tracking-[0] !mb-[20px] font-Jakarta w-full !text-white rounded px-[1.4rem] py-[0.4rem] border-2 border-solid border-white !leading-[1.6666]">
+                  </p>
+                  <p class="color--white !text-[1.125rem] font-semibold tracking-[0] !mb-[20px] font-Jakarta">Color
+                     Scheme</p>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('pink-theme', 60)"><img src="images/color-scheme/pink.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('skyblue-theme', 60)"><img src="images/color-scheme/skyblue.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('magenta-theme', 60)"><img src="images/color-scheme/magenta.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+                  <a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
+                     href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg"
+                        class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
+               </div>
+            </div>
+            <div class="stBlock !text-center" style="margin: 0px 27px 25px 31px;">
+               <a class="btn rounded-[4px] btn--theme hover--theme w-full leading-none mt-[15px] !px-[1.2rem] !py-[0.65rem]"
+                  href="javascript:chooseStyle('none', 60)">Reset
+                  Color</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- END SWITCHER -->
    <!-- PAGE CONTENT
                   ============================================= -->
    <div id="page" class="page font-Jakarta">
@@ -333,9 +382,10 @@
 								
 								<!-- SIMPLE NAVIGATION LINK -->
 								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
 								</li>
 								<!-- SIGN IN LINK -->
-                                <li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="#" class="h-link">Mandatory Disclosure</a>
 								<!-- SIGN UP BUTTON -->
 								<li class="nl-simple" aria-haspopup="true">
 									<a href="contacts.html"
@@ -367,9 +417,11 @@
                      <h2
                         class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !tracking-[-0.5px]">
                         Discover what makes Satyam International School more than just a school</h2>
+                        Discover what makes Satyam International School more than just a school</h2>
                      <!-- Text -->
                      <p
                         class="s-21 color--grey xl:!text-[1.3125rem] xl:!mt-[18px] !mb-0 lg:max-xl:!mt-[15px] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.32352rem] md:max-lg:!mt-[12px] sm:max-md:!text-[1.21875rem] sm:max-md:!mt-[12px] xsm:max-sm:!text-[1.1875rem] xsm:max-sm:!mt-[12px] xsm:max-sm:px-[3%] xsm:max-sm:py-0">
+                        Short description for Tales of Transformation</p>
                         Short description for Tales of Transformation</p>
                   </div>
                </div>
@@ -390,21 +442,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>We have seen remarkable growth in our child academically, emotionally, and socially. The teachers pay attention to every child’s needs and ensure they feel supported and motivated.
+                           <p>We have seen remarkable growth in our child academically, emotionally, and socially. The teachers pay attention to every child’s needs and ensure they feel supported and motivated.
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-1.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                    Kishore</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">@scott_boxer</p> -->
                                     Kishore</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">@scott_boxer</p> -->
                               </div>
@@ -428,21 +485,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>The teachers are really supportive and approachable. They understand the strengths of each child and help them in those areas
+                           <p>The teachers are really supportive and approachable. They understand the strengths of each child and help them in those areas
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-2.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                    Ram Krishna</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">Internet Surfer</p> -->
                                     Ram Krishna</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">Internet Surfer</p> -->
                               </div>
@@ -466,21 +528,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>The variety of activities offered by this school has helped my child discover new interests and talents. Whether it’s sports, arts, or science, the school encourages every child to explore and shine beyond academics.
+                           <p>The variety of activities offered by this school has helped my child discover new interests and talents. Whether it’s sports, arts, or science, the school encourages every child to explore and shine beyond academics.
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-5.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                    Kathyayini</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">App Developer</p> -->
                                     Kathyayini</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">App Developer</p> -->
                               </div>
@@ -504,21 +571,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>The school’s communication with parents is excellent. We are always kept informed about our child’s progress, events, and classroom activities. It truly makes us feel involved and connected to their learning journey.
+                           <p>The school’s communication with parents is excellent. We are always kept informed about our child’s progress, events, and classroom activities. It truly makes us feel involved and connected to their learning journey.
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-8.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                    Sahil Gothwaal</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">WordPress Consultant</p> -->
                                     Sahil Gothwaal</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">WordPress Consultant</p> -->
                               </div>
@@ -542,21 +614,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>This School's approach towards making students to learn about technology and many other skills is really incredible.
+                           <p>This School's approach towards making students to learn about technology and many other skills is really incredible.
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-6.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                    Rahul Pandey</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">Web Developer</p> -->
                                     Rahul Pandey</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">Web Developer</p> -->
                               </div>
@@ -580,21 +657,26 @@
                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
                            <!-- Text -->
                            <p>The teachers are warm, patient, and highly skilled. Their dedication is clearly visible in the way children grow and perform.
+                           <p>The teachers are warm, patient, and highly skilled. Their dedication is clearly visible in the way children grow and perform.
                            </p>
                            <!-- Author -->
                            <div
                               class="author-data clearfix mt-[15px] lg:max-xl:!mt-[8px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
                               <!-- Avatar -->
                               <!-- <div class="review-avatar float-left !m-[0_auto]">
+                              <!-- <div class="review-avatar float-left !m-[0_auto]">
                                  <img
                                     class="xl:!w-[64px] xl:!h-[64px] lg:max-xl:!w-[52px] lg:max-xl:!h-[52px] md:max-lg:!w-[46px] md:max-lg:!h-[46px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px] rounded-[100%]"
                                     src="images/review-author-3.jpg" alt="review-avatar">
+                              </div> -->
                               </div> -->
                               <!-- Data -->
                               <div
                                  class="review-author mt-[10px] lg:max-xl:!mt-[5px] md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
                                  <h6
                                     class="s-18 w--700 xl:!text-[1.125rem] lg:max-xl:!text-[1.125rem] md:max-lg:!text-[1.066176rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold !leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                   Madhu Kumar</h6>
+                                 <!-- <p class="p-sm !leading-none !font-light !mb-0">@marisol19</p> -->
                                    Madhu Kumar</h6>
                                  <!-- <p class="p-sm !leading-none !font-light !mb-0">@marisol19</p> -->
                               </div>
@@ -609,7 +691,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-6"
-                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.7s">
+                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -647,7 +729,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-6"
-                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.8s">
+                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -689,6 +771,39 @@
          <!-- End container -->
       </section>
       <!-- END TESTIMONIALS-2 -->
+      <!-- PAGE PAGINATION
+                     ============================================= -->
+      <div class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px]  page-pagination theme-pagination">
+         <div class="container">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+               <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                  <nav aria-label="Page navigation">
+                     <ul class="pagination ico-20 justify-center flex pl-0 [list-style:none]">
+                        <li class="page-item disabled"><a
+                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] !m-[0_8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
+                              href="#" tabindex="-1"><span class="flaticon-back"></span></a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a
+                              class="page-link relative block !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
+                              href="#">1</a></li>
+                        <li class="page-item"><a
+                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
+                              href="#">2</a></li>
+                        <li class="page-item"><a
+                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
+                              href="#">3</a></li>
+                        <li class="page-item"><a
+                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
+                              href="#" aria-label="Next"><span class="flaticon-next"></span></a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <!-- End row -->
+         </div>
+         <!-- End container -->
+      </div>
+      <!-- END PAGE PAGINATION -->
       <!-- DIVIDER LINE -->
       <hr
          class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
@@ -705,6 +820,7 @@
                         <h4
                            class="s-34 w--700 xl:!text-[2.125rem] lg:max-xl:!text-[2rem] md:max-lg:!text-[1.764705rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] xl:!mb-0 md:max-lg:!mb-[22px] md:max-lg:px-[10%] md:max-lg:py-0 sm:max-md:!text-[2.0625rem] sm:max-md:!mb-[30px] sm:max-md:px-[5%] sm:max-md:py-0 xsm:max-sm:!text-[1.75rem] xsm:max-sm:!mb-[25px] xsm:max-sm:!p-0">
                            Don't miss Campus Events and Alerts</h4>
+                           Don't miss Campus Events and Alerts</h4>
                      </div>
                   </div>
                   <!-- NEWSLETTER FORM -->
@@ -718,6 +834,7 @@
                                        block !h-[54px] !text-[0.975rem] lg:max-xl:!h-[50px] lg:max-xl:!text-[0.975rem] md:max-lg:!h-[46px]  md:max-lg:!text-[1.0625rem] sm:max-md:!h-[54px] sm:max-md:!text-[1.0625rem] xsm:max-sm:!h-[54px] xsm:max-sm:!text-[1.0625rem] bg-white border !text-[#353f4f] !font-normal shadow-none mr-[12px] p-[0_15px] rounded-[6px] border-solid border-[#ccc] focus:bg-white focus:shadow-none focus:border-[#1680fb] md:max-lg:mr-[8px] placeholder:text-[#aaa] focus:[outline:0]"
                               placeholder="Your email address" required id="s-email">
                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn--theme hover--theme">Join Now</button>
                               <button type="submit" class="btn btn--theme hover--theme">Join Now</button>
                            </span>
                         </div>
@@ -793,6 +910,7 @@
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="admissions.html">Admissions</a></p>
+											href="admissions.html">Admissions</a></p>
 								</li>
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
@@ -819,26 +937,22 @@
 								class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">
 								Legal</h6>
 							<!-- Links -->
-                     <ul class="foo-links clearfix">
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
-                                 of Use</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="privacy.html">Privacy Policy</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="mandatory-disclosure.html">Mandatory Disclosure</a></p>
-                        </li>
-                        <!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-                                 href="">Cookie Policy</a></p>
-                        </li>
-                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
-                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
-                        </li> -->
+							<ul class="foo-links clearfix">
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
+											of Use</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+											href="privacy.html">Privacy Policy</a></p>
+								</li>
+								<!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+											href="">Cookie Policy</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -854,10 +968,30 @@
 							<!-- Mail Link -->
 							<p
 								class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
-								<a class="font-normal" href="mailto:yourdomain@mail.com">info@satyam.com</a>
+								<a class="font-normal" href="mailto:yourdomain@mail.com">kumar.jagadeesh123@gmail.com</a>
 							</p>
 							<!-- Social Links -->
 							<ul class="footer-socials ico-25 !text-center clearfix inline-block !m-0">
+								<li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.facebook.com/share/14Y4Wtu4rkc/">
+                              <span class="flaticon-facebook"></span>
+                           </a>
+                        </li>
+
+                        <li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.instagram.com/satyamschoolballari?igsh=MXd3cjgzaXcwMTJpeA==">
+                              <span class="flaticon-instagram"></span>
+                           </a>
+                        </li>
+
+                        <li class="float-left w-auto inline-block align-top clear-none !m-0">
+                           <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
+                              href="https://www.youtube.com/@satyamschoolballari">
+                              <span class="flaticon-youtube"></span>
+                           </a>
+                        </li>
 								<li class="float-left w-auto inline-block align-top clear-none !m-0">
                            <a class="block mr-[16px] lg:max-xl:mr-[14px] md:max-lg:mr-[11px] hover:!text-[#353f4f]"
                               href="https://www.facebook.com/share/14Y4Wtu4rkc/">
@@ -901,6 +1035,7 @@
 						<div
 							class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 							<div class="bottom-secondary-link ico-15 text-right text-end">
+								
 								
 							</div>
 						</div>
