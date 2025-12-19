@@ -38,7 +38,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<!-- TEMPLATE CSS -->
 	<link href="./style.css" rel="stylesheet">
-	<!-- Style Switcher CSS -->
+
 	<link href="css/colors/blue-theme.css" rel="stylesheet">
 	<link href="css/colors/magenta-theme.css" rel="alternate stylesheet" title="magenta-theme">
 	<link href="css/colors/crocus-theme.css" rel="alternate stylesheet" title="crocus-theme">
@@ -65,6 +65,15 @@
 		/* Prevents conflict between Bootstrap lists and Tailwind */
 		ul { list-style: none; padding-left: 0; }
 		.wsmenu-list li { list-style: none; }
+		/* Custom CTA button hover effect for hero */
+		.custom-cta-btn {
+			transition: background 0.3s, color 0.3s, border 0.3s;
+		}
+		.custom-cta-btn:hover {
+			background: #fff !important;
+			color: #0870b8 !important;
+			border: 2px solid #0870b8 !important;
+		}
 	</style>
 </head>
 
@@ -78,57 +87,7 @@
 				class="loader !w-[100px] !h-[100px] inline-block relative box-border animate-[rotation_1s_linear_infinite] rounded-[50%] border-2 border-solid border-[transparent_#888] after:content-[''] after:box-border after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:rounded-[50%] after:border-[50px] after:border-solid after:border-[transparent_rgba(30,30,30,0.15)] after:left-2/4 after:!top-2/4 lg:max-xl:!w-[90px] lg:max-xl:!h-[90px] lg:max-xl:after:border-[45px] lg:max-xl:after:border-solid md:max-lg:!w-[90px] md:max-lg:!h-[90px] md:max-lg:after:border-[45px] md:max-lg:after:border-solid sm:max-md:!w-[80px] sm:max-md:!h-[80px] sm:max-md:after:border-[40px] sm:max-md:after:border-solid"></span>
 		</div>
 	</div>
-	<!-- STYLE SWITCHER
-                  ============================================= -->
-	<div id="stlChanger"
-		class="fixed z-[9999] !text-[15px] overflow-hidden right-[-230px] cursor-pointer transition-all duration-[400ms] ease-[ease-in-out] rounded-none top-[100px] xsm:max-sm:hidden">
-		<div class="blockChanger bgChanger min-w-[280px] min-h-[280px] !w-[230px]">
-			<!-- <a href="#"
-				class="chBut icon-xs !w-[50px] !h-[50px] !absolute z-[1000000] !text-center transition-all duration-300 ease-[ease-in-out] shadow-[0_0_2px_rgba(50,50,50,0.4)] pl-[2px] pr-0 py-0 rounded-[4px_0px_0px_4px] ![border-left:none] [border:1px_solid_#ef2853] left-0 top-[30px] bg-[#ef2853]"><span
-					class="flaticon-control-panel before:content-['\f1cf'] before:!text-white before:!text-[2.15rem]"></span></a> -->
-			<div
-				class="chBody white-color !w-[230px] relative border !h-[425px] overflow-scroll overflow-x-hidden ml-[50px] rounded-[4px_0px_0px_4px] border-solid border-[#2b2e37] bg-[#2b2e37] [direction:rtl]">
-				<div class="stBlock !text-center" style="margin: 30px 20px 20px 26px;">
-					<div class="stBgs">
-						<p class="color--white !text-[1.125rem] font-semibold tracking-[0] !mb-[20px] font-Jakarta">
-							Color Scheme</p>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('pink-theme', 60)"><img src="images/color-scheme/pink.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('purple-theme', 60)"><img src="images/color-scheme/purple.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('violet-theme', 60)"><img src="images/color-scheme/violet.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('skyblue-theme', 60)"><img
-								src="images/color-scheme/skyblue.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]"
-								alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('magenta-theme', 60)"><img
-								src="images/color-scheme/magenta.jpg" class=" !w-[50px] !h-[50px] rounded-[8px]"
-								alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('crocus-theme', 60)"><img src="images/color-scheme/crocus.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('red-theme', 60)"><img src="images/color-scheme/red.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-						<a class=" no-underline !w-[50px] !h-[50px] float-left cursor-pointer opacity-100 !mt-0 !mb-[8px] mx-[5px] !p-0 rounded-[8px]"
-							href="javascript:chooseStyle('green-theme', 60)"><img src="images/color-scheme/green.jpg"
-								class=" !w-[50px] !h-[50px] rounded-[8px]" alt=""></a>
-					</div>
-				</div>
-				<div class="stBlock !text-center" style="margin: 0px 27px 25px 31px;">
-					<a class="btn rounded-[4px] btn--theme hover--theme w-full leading-none mt-[15px] !px-[1.2rem] !py-[0.65rem]"
-						href="javascript:chooseStyle('none', 60)">Reset
-						Color</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END SWITCHER -->
+
 	<!-- PAGE CONTENT
                   ============================================= -->
 	<div id="page" class="page font-Jakarta">
@@ -179,18 +138,27 @@
 									</ul> -->
 								</li>
 								<!-- SIMPLE NAVIGATION LINK -->
-								<li class="nl-simple" aria-haspopup="true"><a href="about.html"
-										class="h-link">About us</a></li>
-								<!-- MEGAMENU -->
-								<!-- DROPDOWN SUB MENU -->
 								<li aria-haspopup="true">
-									<a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
+									<a class="h-link">About us <span class="wsarrow"></span></a>
 									<ul class="sub-menu">
-										<!-- <li aria-haspopup="true"><a href="about.html">About us</a></li> -->
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="about.html#about-3">Vision & Mission</a></li>
+										<li><a href="about.html#statistic-5">Key Achievements</a></li>
+										<li><a href="about.html#founder-msg">Founder's Message</a></li>
+										<li><a href="about.html#features-11">Our Approach</a></li>
+										<li><a href="about.html#team-1">Facilities</a></li>
+										<li><a href="about.html#chairperson-msg">Chairperson's Note</a></li>
+										<li><a href="about.html#director-msg">Director's Word</a></li>
+									</ul>
+									</li>
+								<li aria-haspopup="true">
+									<a href="#" class="h-link" onclick="return false;">Academics <span class="wsarrow"></span></a>
+									<ul class="sub-menu">
 										<li aria-haspopup="true"><a href="academics.html">Academics</a></li>
 										<li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
 										<li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
 										<li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
+										<li aria-haspopup="true"><a href="team.html">Our Gallery</a></li>
 									</ul>
 								</li>
 
@@ -269,25 +237,27 @@
 		<!-- HERO-11
                      ============================================= -->
 		<section id="hero-11"
-			class="bg--scroll hero-section relative z-[3] overflow-hidden bg-[url(./images/hero-11.jpg)] w-full bg-no-repeat bg-[center_center] bg-cover bg-fixed sm:max-md:w-auto sm:max-md:bg-scroll xsm:max-sm:w-auto xsm:max-sm:bg-scroll pt-[50px] md:max-lg:!mt-[80px]">
-			<div class="container">
+			class="bg--scroll hero-section relative z-[3] overflow-hidden w-full bg-no-repeat bg-[center_center] bg-cover bg-fixed sm:max-md:w-auto sm:max-md:bg-scroll xsm:max-sm:w-auto xsm:max-sm:bg-scroll pt-[50px] md:max-lg:!mt-[80px]"
+			style="background-image: url('images/about_us/Elite_Block_Building.png'); min-height: 100vh; background-size: cover; background-position: center;">
+			<div style="position:absolute;inset:0;background:rgba(0,0,0,0.55);mix-blend-mode:multiply;z-index:1;"></div>
+			<div class="container" style="position:relative;z-index:2;">
 				<div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]  items-center">
 					<!-- HERO TEXT -->
 					<div
 						class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 						<div
-							class="hero-11-txt wow fadeInRight mt--40 mt-[40px] md:max-lg:-mt-[40px] sm:max-md:px-[3%] sm:max-md:py-0 xsm:max-sm:px-[4%] xsm:max-sm:py-0">
+							class="hero-11-txt wow fadeInRight mt--40 mt-[40px] md:max-lg:-mt-[40px] sm:max-md:px-[3%] sm:max-md:py-0 xsm:max-sm:px-[4%] xsm:max-sm:py-0 text-white">
 							<!-- Title -->
 							<h2
-								class="s-60 w--700 xl:!text-[3.75rem] lg:max-xl:!text-[3.5rem] xsm:max-sm:!text-[2.0625rem] md:max-lg:!text-[3.23529rem] sm:max-md:!text-[2.625rem] !font-bold xl:!mb-[28px] lg:max-xl:!mb-[24px] md:max-lg:!mb-[18px] sm:max-md:!mb-[15px] xsm:max-sm:!mb-[18px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
-								Building Leaders for Tomorrow </h2>
+								class="s-60 w--700 xl:!text-[3.75rem] lg:max-xl:!text-[3.5rem] xsm:max-sm:!text-[2.0625rem] md:max-lg:!text-[3.23529rem] sm:max-md:!text-[2.625rem] !font-bold xl:!mb-[28px] lg:max-xl:!mb-[24px] md:max-lg:!mb-[18px] sm:max-md:!mb-[15px] xsm:max-sm:!mb-[18px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]" style="margin-top: 20vh; color: #ffffff;">
+								Building Leaders Of Tomorrow </h2>
 							<!-- Text -->
 							<p
 								class="p-lg pr-[5%] md:max-lg:pr-0 xl:!mb-[32px] lg:max-xl:!mb-[28px] md:max-lg:!mb-[24px] sm:max-md:!mb-[25px] xsm:max-sm:!mb-[25px]">
 								Top CBSE School in Ballari | Equipping the Next Generation. Experience the best CBSE syllabus and world-class facilities in the heart of Bellary.
 							</p>
 							<!-- Button -->
-							<a href="contacts.html" class="btn  !rounded-[4px]  btn--theme hover--tra-black">Get Your Admission Today</a>
+							<a href="contacts.html" class="btn !rounded-[4px] btn--theme custom-cta-btn">Get Your Admission Today</a>
 							
 						</div>
 					</div>
@@ -295,10 +265,10 @@
 					<!-- HERO IMAGE -->
 					<div
 						class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
-						<div
+						<!-- <div
 							class="hero-11-img !text-center wow fadeInLeft relative m-[-60px_-12%_-100px_-15px] md:max-lg:!mt-[-100px] md:max-lg:mr-[-12%] md:max-lg:!mb-[-50px] md:max-lg:ml-0 sm:max-md:!mt-[40px] sm:max-md:-mb-[80px] sm:max-md:mx-0 xsm:max-sm:!mb-[-50px] xsm:max-sm:!mt-[35px] xsm:max-sm:mx-[3%]">
-							<img class="img-fluid" src="images/hero-11-img.png" alt="hero-image">
-						</div>
+							<img class="img-fluid" src="images/about_us/admission.png" alt="hero-image">
+						</div> -->
 					</div>
 				</div>
 				<!-- End row -->
@@ -334,7 +304,7 @@
 					<div class="flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
 						<div class="img-block !text-center video-preview wow fadeInUp relative">
 							<!-- Play Icon -->
-							<a class="video-popup1" href="https://www.youtube.com/embed/SZEflIVnhH8">
+							<a class="video-popup1" href="https://www.youtube.com/watch?v=huA4cggeCBA">
 								<div
 									class="video-btn video-btn-xl !w-[6.25rem] !h-[6.25rem] mt-[-3.125rem] ml-[-3.125rem] md:max-lg:w-28 md:max-lg:!h-28 md:max-lg:!mt-[-3.5rem] md:max-lg:ml-[-3.5rem] !absolute inline-block !text-center !text-white rounded-[100%] left-2/4 top-2/4 before:content-[''] before:absolute before:left-[-5px] before:right-[-5px] before:top-[-5px] before:bottom-[-5px] before:opacity-0 before:transition-all before:duration-[400ms] before:ease-[ease-in-out] before:rounded-[50%] before:bg-[rgba(255,255,255,0.2)] group hover:before:opacity-75  hover:before:left-[-1.5rem]  hover:before:right-[-1.5rem]  hover:before:top-[-1.5rem]  hover:before:bottom-[-1.5rem] bg--pink-400">
 									<div
@@ -343,7 +313,7 @@
 								</div>
 							</a>
 							<!-- Preview Image -->
-							<img class="img-fluid inline-block" src="images/img-15.png" alt="video-preview">
+							<img class="img-fluid inline-block" src="images/about_us/Index_Dashboard.png" alt="video-preview">
 						</div>
 					</div>
 				</div>
@@ -363,7 +333,7 @@
 						class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
 						<div
 							class="img-block !text-center left-column wow fadeInRight mr-[30px] lg:max-xl:mr-[5px] md:max-lg:mr-0 sm:max-md:mx-[3%] xsm:max-sm:m-[0_2%_35px]">
-							<img class="img-fluid" src="images/satyam_about_section.png" alt="content-image">
+							<img class="img-fluid" src="images/about_us/Dashboard.png" alt="content-image">
 						</div>
 					</div>
 					<!-- TEXT BLOCK -->
@@ -375,9 +345,9 @@
 								<!-- Title -->
 								<h5
 									class="s-24 w--700 xl:!text-[1.5rem] lg:max-xl:!text-[1.375rem] md:max-lg:!text-[1.470588rem] sm:max-md:!text-[1.625rem] xsm:max-sm:!text-[1.4375rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] xl:!mb-[20px] lg:max-xl:!mb-[18px] md:max-lg:!mb-[18px] sm:max-md:!mb-[18px]">
-									Curiosity Meets Learning</h5>
+									Unleash Your Inner Genius</h5>
 								<!-- Text -->
-								<p>From playful exploration to sessions on science and digital skills, we nurture your child’s journey.
+								<p>Step into a space where passions play and learning feels joyful.
 								</p>
 							</div>
 							<!-- END TEXT BOX -->
@@ -386,18 +356,21 @@
 								<!-- Title -->
 								<h5
 									class="s-24 w--700 xl:!text-[1.5rem] lg:max-xl:!text-[1.375rem] md:max-lg:!text-[1.470588rem] sm:max-md:!text-[1.625rem] xsm:max-sm:!text-[1.4375rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] xl:!mb-[20px] lg:max-xl:!mb-[18px] md:max-lg:!mb-[18px] sm:max-md:!mb-[18px]">
-									Beyond Classroom Learning</h5>
+									Building skills beyond class</h5>
 								<!-- Text -->
-								<p>Our diverse extracurricular activities and academic schedule ensures that every student gets their hand on different skill sets  right here on campus
+								<p>Learning doesn’t stop at the blackboard it explores! From lab coats to keyboards, our students learn by doing, discovering new skills every day
 								</p>
+								<br/>
+
 								<!-- List -->
 								<ul class="simple-list">
 									<li class="list-item">
-										<p>Strengthen practical understanding and problem-solving skills with chemistry lab experiments.
+										<p>Fun computer lab activities that build digital confidence and teamwork
 										</p>
+										<div class="mb-6"></div>
 									</li>
 									<li class="list-item">
-										<p class="!mb-0">Enhance digital skills and social development through engaging computer lab activities and interactive play sessions
+										<p class="!mb-0">Environment that nurtures creativity while building confidence
 										</p>
 									</li>
 								</ul>
@@ -435,7 +408,7 @@
 										class="p-xl mt-[20px] lg:max-xl:!mt-[15px] md:max-lg:!mt-[10px] sm:max-md:!mt-3 xsm:max-sm:!mt-3 xsm:max-sm:!text-[1.125rem] xl:!mb-[25px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
 										</p>
 									<!-- Button -->
-									<a href="about.html" class="btn  !rounded-[4px]  btn--theme hover--tra-white">Explore our campus</a>
+									<a href="about.html" class="btn  !rounded-[4px]  btn--theme hover--tra-white">Know about us</a>
 									<!-- Button Text -->
 									<p
 										class="p-sm btn-txt ico-15 !m-[20px_0_0_0] lg:max-xl:!mt-[15px] lg:max-xl:!mb-0 lg:max-xl:mx-0 md:max-lg:!mt-[13px] md:max-lg:!mb-0 md:max-lg:mx-0 xsm:max-sm:!mt-[18px] xsm:max-sm:!mb-0 sm:max-md:!mt-[15px] sm:max-md:!mb-0 sm:max-md:mx-0">
@@ -1019,7 +992,7 @@
 						<div id="bp-1-1" class="blog-post wow fadeInUp">
 							<!-- BLOG POST IMAGE -->
 							<div class="blog-post-img  !mb-[35px] ">
-								<img class="img-fluid rounded-[16px] " src="./images/elite_block.png"
+								<img class="img-fluid rounded-[16px] " src="./images/about_us/Elite_Block_Building.png"
 									alt="blog-post-image">
 							</div>
 							<!-- BLOG POST TEXT -->
@@ -1064,7 +1037,7 @@
 						<div id="bp-1-2" class="blog-post wow fadeInUp">
 							<!-- BLOG POST IMAGE -->
 							<div class="blog-post-img  !mb-[35px] ">
-								<img class="img-fluid rounded-[16px] " src="./images/blog/Class Room.png"
+								<img class="img-fluid rounded-[16px] " src="./images/satyam-3.jpeg"
 									alt="blog-post-image">
 							</div>
 							<!-- BLOG POST TEXT -->
@@ -1109,7 +1082,7 @@
 						<div id="bp-1-3" class="blog-post wow fadeInUp">
 							<!-- BLOG POST IMAGE -->
 							<div class="blog-post-img  !mb-[35px] ">
-								<img class="img-fluid rounded-[16px] " src="images/blog/abc (1).png"
+								<img class="img-fluid rounded-[16px] " src="images/about_us/Campus.png"
 									alt="blog-post-image">
 							</div>
 							<!-- BLOG POST TEXT -->
@@ -1215,10 +1188,12 @@
 					<!-- FOOTER LOGO -->
 					<div class="xl:w-3/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
 						<div class="footer-info !mb-[40px] lg:max-xl:!mb-[50px]">
-							<img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]"
-								src="images/satyam logo.webp" alt="footer-logo">
-							<img class="footer-logo-dark hidden w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]"
-								src="images/satyam logo.webp" alt="footer-logo">
+							<div class="flex items-center gap-4">
+								<img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]"
+									src="images/satyam logo-1.png" alt="footer-logo-1">
+								<img class="footer-logo w-auto max-w-[inherit] xl:!max-h-[40px] lg:max-xl:!max-h-[34px] md:max-lg:!max-h-[33px] sm:max-md:!max-h-[38px] xsm:max-sm:!max-h-[37px]"
+									src="images/satyam logo-2.png" alt="footer-logo-2">
+							</div>
 						</div>
 					</div>
 					<!-- FOOTER LINKS -->
@@ -1322,7 +1297,7 @@
 							<!-- Mail Link -->
 							<p
 								class="footer-mail-link ico-25 !ml-0 !mb-[20px] lg:max-xl:!mb-[14px] md:max-lg:!mb-[10px]">
-								<a class="font-normal" href="mailto:yourdomain@mail.com">kumar.jagadeesh123@gmail.com</a>
+								<a class="font-normal" href="mailto:info@satyam.com">info@satyam.com</a>
 							</p>
 							<!-- Social Links -->
 							<ul class="footer-socials ico-25 !text-center clearfix inline-block !m-0">
