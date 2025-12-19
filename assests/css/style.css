@@ -262,7 +262,7 @@ hr.divider {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+  animation: rotation 0.5s linear infinite;
 }
 
 .loading--blue .loader { 
