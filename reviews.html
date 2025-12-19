@@ -16,12 +16,12 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="author" content="elite-themes24">
-   <meta name="description" content="Martex - Tailwind CSS Software, SaaS & Startup Template">
+   <meta name="description" content="Satyam International School - Excellence in Education for a Brighter Future">
    <meta name="keywords"
       content="Responsive, HTML5, elite-themes24, Landing, Software, Mobile App, SaaS, Startup, Creative, Digital Product">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- SITE TITLE -->
-   <title>Martex - Tailwind CSS Software, SaaS & Startup Template</title>
+   <title>Satyam International School - Excellence in Education for a Brighter Future</title>
   <!-- FAVICON AND TOUCH ICONS -->
 	<link rel="shortcut icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
 	<link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
@@ -30,6 +30,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="images/Satyam_Icon_1.png">
 	<link rel="apple-touch-icon" href="images/Satyam_Icon_1.png">
 	<link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 	<link href="css/flaticon.css" rel="stylesheet">
    <!-- FONT ICONS -->
    <link href="css/flaticon.css" rel="stylesheet">
@@ -54,6 +61,136 @@
    <link href="css/colors/skyblue-theme.css" rel="alternate stylesheet" title="skyblue-theme">
    <link href="css/colors/red-theme.css" rel="alternate stylesheet" title="red-theme">
    <link href="css/colors/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: {
+                  Jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+               }
+            }
+         }
+      }
+   </script>
+
+   <style>
+      ul { list-style: none; padding-left: 0; }
+      .wsmenu-list li { list-style: none; }
+      
+      /* Testimonial Card Alignment */
+      .reviews-2-wrapper .row-cols-md-2 {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: stretch;
+      }
+      
+      .reviews-2-wrapper .col {
+         display: flex;
+         flex-direction: column;
+      }
+      
+      .review-2 {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         transition: opacity 0.6s ease, transform 0.6s ease;
+         opacity: 0;
+         transform: translateY(30px);
+      }
+      
+      .review-2.animated {
+         opacity: 1 !important;
+         transform: translateY(0) !important;
+      }
+      
+      .review-txt {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+      }
+      
+      .review-txt p {
+         flex: 1;
+      }
+      
+      /* Floating Animation Keyframes */
+      @keyframes float {
+         0%, 100% {
+            transform: translateY(0px);
+         }
+         50% {
+            transform: translateY(-10px);
+         }
+      }
+      
+      /* Hover Float Effect - Applied to ALL testimonial boxes */
+      .review-2 {
+         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+         will-change: transform;
+         cursor: pointer;
+         margin-bottom: 35px !important;
+         margin-top: 25px !important;
+         position: relative;
+         z-index: 1;
+      }
+      
+      .review-2:hover {
+         animation: float 2s ease-in-out infinite !important;
+         box-shadow: 0 20px 40px rgba(8, 112, 184, 0.15) !important;
+         z-index: 10 !important;
+      }
+      
+      /* Ensure animation works on all cards */
+      #rw-2-1:hover,
+      #rw-2-2:hover,
+      #rw-2-3:hover,
+      #rw-2-4:hover,
+      #rw-2-5:hover,
+      #rw-2-6:hover {
+         animation: float 2s ease-in-out infinite !important;
+         z-index: 10 !important;
+      }
+      
+      /* Add padding to column containers to prevent horizontal overlap */
+      .reviews-2-wrapper .col {
+         padding-left: 15px !important;
+         padding-right: 15px !important;
+      }
+      
+      /* Responsive spacing for different screen sizes */
+      @media (min-width: 768px) {
+         .review-2 {
+            margin-bottom: 45px !important;
+            margin-top: 30px !important;
+         }
+         
+         .reviews-2-wrapper .col {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+         }
+      }
+      
+      @media (min-width: 1024px) {
+         .review-2 {
+            margin-bottom: 55px !important;
+            margin-top: 35px !important;
+         }
+         
+         .reviews-2-wrapper .col {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+         }
+      }
+      
+      @media (min-width: 1280px) {
+         .review-2 {
+            margin-bottom: 65px !important;
+            margin-top: 40px !important;
+         }
+      }
+   </style>
 </head>
 
 <body>
@@ -118,7 +255,7 @@
    <!-- END SWITCHER -->
    <!-- PAGE CONTENT
                   ============================================= -->
-   <div id="page" class="page font--jakarta">
+   <div id="page" class="page font-Jakarta">
         <!-- HEADER
 				   ============================================= -->
 		<header id="header" class="white-menu navbar-dark light-hero-header white-scroll w-full block !pt-0">
@@ -172,14 +309,13 @@
 								<!-- DROPDOWN SUB MENU -->
 								<li aria-haspopup="true">
 									<a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
-									<ul class="sub-menu">
-										<!-- <li aria-haspopup="true"><a href="about.html">About us</a></li> -->
-										<li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
-										<li aria-haspopup="true"><a href="careers.html">Careers</a></li>
-										<li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
-										<li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
-										<li aria-haspopup="true"><a href="team.html">Our Team</a></li>
-									</ul>
+                           <ul class="sub-menu">
+                              <!-- <li aria-haspopup="true"><a href="about.html">About us</a></li> -->
+                              <li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
+                              <li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
+                              <li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
+                              <li aria-haspopup="true"><a href="team.html">Our Team</a></li>
+                           </ul>
 								</li>
 
 								<!-- <li aria-haspopup="true" class="mg_link">
@@ -193,8 +329,7 @@
 													<li class="fst-li"><a href="about.html">About Us</a></li>
 													<li><a href="reviews.html">Our Team</a></li>
 													 <li class="fst-li"><a href="blog-listing.html">Blog Listing</a></li>
-													<li><a href="careers.html">Careers <span
-																class="sm-info">4</span></a></li>
+                                                    
 													<li><a href="career-role.html">Career Details</a></li>
 													<li><a href="faqs.html">FAQs Page</a></li> 
 													<li><a href="contacts.html">Contact Us</a></li>
@@ -239,7 +374,7 @@
 								<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
 								</li>
 								<!-- SIGN IN LINK -->
-								<li class="nl-simple" aria-haspopup="true"><a href="#" class="h-link">Mandatory Disclosure</a>
+                                <li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a>
 								<!-- SIGN UP BUTTON -->
 								<li class="nl-simple" aria-haspopup="true">
 									<a href="contacts.html"
@@ -285,7 +420,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-1"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.1s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -323,7 +458,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-2"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.2s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -361,7 +496,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-3"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.3s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -399,7 +534,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-4"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.4s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -437,7 +572,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-5"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.5s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -475,7 +610,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-6"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.6s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -513,7 +648,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-6"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.7s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -551,7 +686,7 @@
                   <div
                      class="col md:max-lg:w-6/12 lg:max-xl:w-6/12 xl:w-6/12 flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
                      <div id="rw-2-6"
-                        class="review-2 p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        class="review-2 wow fadeInUp p-[45px_50px_35px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[30px] lg:max-xl:px-[35px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-[35px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] bg--white-100 block-shadow rounded-[8px] !mb-[20px] md:max-lg:!mb-[12px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]" data-wow-delay="0.8s">
                         <!-- Quote Icon -->
                         <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]"><span
                               class="flaticon-quote"></span></div>
@@ -593,39 +728,6 @@
          <!-- End container -->
       </section>
       <!-- END TESTIMONIALS-2 -->
-      <!-- PAGE PAGINATION
-                     ============================================= -->
-      <div class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px]  page-pagination theme-pagination">
-         <div class="container">
-            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
-               <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
-                  <nav aria-label="Page navigation">
-                     <ul class="pagination ico-20 justify-center flex pl-0 [list-style:none]">
-                        <li class="page-item disabled"><a
-                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] !m-[0_8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
-                              href="#" tabindex="-1"><span class="flaticon-back"></span></a>
-                        </li>
-                        <li class="page-item active" aria-current="page"><a
-                              class="page-link relative block !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
-                              href="#">1</a></li>
-                        <li class="page-item"><a
-                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
-                              href="#">2</a></li>
-                        <li class="page-item"><a
-                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
-                              href="#">3</a></li>
-                        <li class="page-item"><a
-                              class="page-link relative block !text-[#6c757d] !text-[1.1rem] font-medium bg-transparent rounded transition-all duration-[400ms] ease-[ease-in-out] ml-[-1px] mr-[8px] p-[2px_14px] [border:2px_solid_transparent] hover:!text-[#6c757d] hover:!bg-transparent hover:border-2 hover:border-solid hover:border-[#ccc] focus:!text-[#6c757d] focus:!bg-transparent focus:shadow-[0_0] focus:border-2 focus:border-solid focus:border-transparent xsm:max-sm:!text-[0.95rem] xsm:max-sm:px-[10px] xsm:max-sm:py-[2px]"
-                              href="#" aria-label="Next"><span class="flaticon-next"></span></a></li>
-                     </ul>
-                  </nav>
-               </div>
-            </div>
-            <!-- End row -->
-         </div>
-         <!-- End container -->
-      </div>
-      <!-- END PAGE PAGINATION -->
       <!-- DIVIDER LINE -->
       <hr
          class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]">
@@ -704,10 +806,7 @@
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About
 											Us</a></p>
 								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="careers.html">Careers</a></p>
-								</li>
+
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="blog-listing.html">Our Blog</a></p>
@@ -759,22 +858,26 @@
 								class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">
 								Legal</h6>
 							<!-- Links -->
-							<ul class="foo-links clearfix">
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
-											of Use</a></p>
-								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="privacy.html">Privacy Policy</a></p>
-								</li>
-								<!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="">Cookie Policy</a></p>
-								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
-								</li> -->
+                     <ul class="foo-links clearfix">
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
+                                 of Use</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="privacy.html">Privacy Policy</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="mandatory-disclosure.html">Mandatory Disclosure</a></p>
+                        </li>
+                        <!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="">Cookie Policy</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
+                        </li> -->
 							</ul>
 						</div>
 					</div>
@@ -872,6 +975,56 @@
 
    <script src="js/changer.js"></script>
    <script defer src="js/styleswitch.js"></script>
+
+   <!-- Bidirectional Scroll Animation Script -->
+   <script>
+      $(document).ready(function() {
+         var testimonialCards = $('.review-2');
+         var windowHeight = $(window).height();
+         
+         function checkScroll() {
+            testimonialCards.each(function() {
+               var element = $(this);
+               var elementTop = element.offset().top;
+               var elementBottom = elementTop + element.outerHeight();
+               var scrollTop = $(window).scrollTop();
+               var viewportTop = scrollTop;
+               var viewportBottom = scrollTop + windowHeight;
+               
+               // Check if element is in viewport
+               if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                  // Element is in viewport - show it
+                  if (!element.hasClass('animated')) {
+                     element.addClass('animated');
+                  }
+                  element.css('opacity', '1');
+               } else {
+                  // Element is out of viewport - hide it
+                  element.removeClass('animated');
+                  element.css('opacity', '0');
+               }
+            });
+         }
+         
+         // Initial check
+         setTimeout(checkScroll, 100);
+         
+         // Check on scroll with throttling
+         var scrollTimeout;
+         $(window).on('scroll', function() {
+            if (scrollTimeout) {
+               clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(checkScroll, 50);
+         });
+         
+         // Check on resize
+         $(window).on('resize', function() {
+            windowHeight = $(window).height();
+            checkScroll();
+         });
+      });
+   </script>
 </body>
 
 </html>

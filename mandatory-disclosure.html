@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="elite-themes24">
-    <meta name="description" content="Mandatory Disclosure - Satyam International School">
-    <meta name="keywords" content="School, Education, CBSE, Mandatory Disclosure, Ballari">
+    <meta name="description" content="Satyam International School - Excellence in Education for a Brighter Future">
+    <meta name="keywords" content="Satyam International School - Excellence in Education for a Brighter Future">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mandatory Disclosure - Satyam International School</title>
+    <title>Satyam International School - Excellence in Education for a Brighter Future</title>
 
     <link rel="shortcut icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
     <link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
@@ -55,6 +55,58 @@
         /* Prevents conflict between Bootstrap lists and Tailwind */
         ul { list-style: none; padding-left: 0; }
         .wsmenu-list li { list-style: none; }
+        
+        /* Accordion Styles */
+        .accordion-item {
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-header {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .accordion-header:hover {
+            background: linear-gradient(135deg, #0870b8 0%, #065a94 100%) !important;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 !important;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+            opacity: 0;
+        }
+        
+        .accordion-content.active {
+            max-height: 5000px;
+            padding: 2rem !important;
+            opacity: 1;
+        }
+        
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-header.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Floating animation for accordion items */
+        @keyframes floatAccordion {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+        
+        .accordion-item:hover {
+            animation: floatAccordion 2s ease-in-out infinite;
+            box-shadow: 0 25px 60px rgba(8, 112, 184, 0.2) !important;
+        }
     </style>
 </head>
 
@@ -98,7 +150,6 @@
                                     <a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
                                     <ul class="sub-menu">
                                         <li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
-                                        <li aria-haspopup="true"><a href="careers.html">Careers</a></li>
                                         <li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
                                         <li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
                                         <li aria-haspopup="true"><a href="team.html">Our Team</a></li>
@@ -132,16 +183,18 @@
                         </p>
                     </div>
                     
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
-                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
-                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">A</span>
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
+                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="accordion-header active px-8 py-5 flex items-center justify-between bg-gradient-to-r from-theme to-theme-dark text-white cursor-pointer">
+                                <h4 class="text-lg font-bold">
                                     General Information
                                 </h4>
+                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
                             </div>
                             
-                            <div class="p-8">
+                            <div class="accordion-content active p-8">
                                 <div class="overflow-hidden rounded-lg border border-slate-200">
                                     <table class="w-full text-left border-collapse">
                                         <thead class="bg-theme text-white">
@@ -194,15 +247,17 @@
                         </div>
                     </div>
 
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
-                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
-                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">B</span>
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
+                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
+                                <h4 class="text-lg font-bold">
                                     Documents & Information
                                 </h4>
+                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
                             </div>
-                            <div class="p-8">
+                            <div class="accordion-content p-0">
                                 <div class="overflow-hidden rounded-lg border border-slate-200">
                                     <table class="w-full text-left border-collapse">
                                         <thead class="bg-theme text-white">
@@ -346,16 +401,18 @@
                         </div>
                     </div>
 
-                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[50px]">
-                        <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
-                            <div class="px-8 py-6 border-b border-slate-100 flex items-center justify-between bg-white">
-                                <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                                    <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">C</span>
+                    <div class="w-full px-[calc(0.5*_1.5rem)] mb-[30px]">
+                        <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100">
+                            <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
+                                <h4 class="text-lg font-bold">
                                     Result and Academics
                                 </h4>
+                                <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
                             </div>
                             
-                            <div class="p-8">
+                            <div class="accordion-content p-0">
                                 <div class="mb-8">
                                     <h5 class="text-lg font-bold text-slate-700 mb-4 pl-2 border-l-4 border-theme">Result Class: X</h5>
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
@@ -440,15 +497,17 @@
                     </div>
 
                     <div class="flex flex-wrap w-full">
-                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[50px]">
-                            <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
-                                <div class="px-8 py-6 border-b border-slate-100 flex items-center bg-white">
-                                    <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                                        <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">D</span>
+                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[30px]">
+                            <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
+                                <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
+                                    <h4 class="text-lg font-bold">
                                         Staff (Teaching)
                                     </h4>
+                                    <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
                                 </div>
-                                <div class="p-8">
+                                <div class="accordion-content p-0">
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
                                         <table class="w-full text-left border-collapse">
                                             <thead class="bg-theme text-white">
@@ -485,15 +544,17 @@
                             </div>
                         </div>
 
-                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[50px]">
-                            <div class="bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
-                                <div class="px-8 py-6 border-b border-slate-100 flex items-center bg-white">
-                                    <h4 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                                        <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-theme text-white text-lg font-bold">E</span>
+                        <div class="w-full xl:w-1/2 px-[calc(0.5*_1.5rem)] mb-[30px]">
+                            <div class="accordion-item bg-white rounded-[12px] overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] border border-slate-100 h-full">
+                                <div class="accordion-header px-8 py-5 flex items-center justify-between bg-theme text-white cursor-pointer">
+                                    <h4 class="text-lg font-bold">
                                         School Infrastructure
                                     </h4>
+                                    <svg class="accordion-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
                                 </div>
-                                <div class="p-8">
+                                <div class="accordion-content p-0">
                                     <div class="overflow-hidden rounded-lg border border-slate-200">
                                         <table class="w-full text-left border-collapse">
                                             <thead class="bg-theme text-white">
@@ -581,7 +642,7 @@
                             <h6 class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">School</h6>
                             <ul class="foo-links clearfix">
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About Us</a></p></li>
-                                <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="careers.html">Careers</a></p></li>
+                                
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="blog-listing.html">Our Blog</a></p></li>
                                 <li class="w-auto block align-top clear-none !m-0 !p-0"><p class="!font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="contacts.html">Contact Us</a></p></li>
                             </ul>
@@ -663,6 +724,51 @@
     <script src="js/custom.js"></script>
     <script src="js/changer.js"></script>
     <script src="js/styleswitch.js"></script>
+    
+    <script>
+        // Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent event bubbling
+                    
+                    // Find the closest accordion-item parent
+                    const accordionItem = this.closest('.accordion-item');
+                    if (!accordionItem) return;
+                    
+                    const accordionContent = accordionItem.querySelector('.accordion-content');
+                    if (!accordionContent) return;
+                    
+                    const isActive = this.classList.contains('active');
+                    
+                    // Toggle current accordion
+                    this.classList.toggle('active');
+                    accordionContent.classList.toggle('active');
+                    
+                    // Smooth scroll animation
+                    if (!isActive) {
+                        setTimeout(() => {
+                            accordionItem.scrollIntoView({ 
+                                behavior: 'smooth', 
+                                block: 'nearest' 
+                            });
+                        }, 100);
+                    }
+                });
+            });
+            
+            // Open first accordion by default
+            if (accordionHeaders.length > 0) {
+                const firstAccordion = accordionHeaders[0].closest('.accordion-item');
+                if (firstAccordion) {
+                    accordionHeaders[0].classList.add('active');
+                    firstAccordion.querySelector('.accordion-content').classList.add('active');
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

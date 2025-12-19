@@ -19,6 +19,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="images/Satyam_Icon_1.png">
 	<link rel="apple-touch-icon" href="images/Satyam_Icon_1.png">
 	<link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 	<link href="css/flaticon.css" rel="stylesheet">
 	<!-- PLUGINS STYLESHEET -->
 	<link href="css/menu.css" rel="stylesheet">
@@ -32,8 +39,8 @@
 	<!-- TEMPLATE CSS -->
 	<link href="./style.css" rel="stylesheet">
 	<!-- Style Switcher CSS -->
-	<link href="css/colors/magenta-theme.css" rel="stylesheet">
-	<link href="css/colors/blue-theme.css" rel="alternate stylesheet" title="blue-theme">
+	<link href="css/colors/blue-theme.css" rel="stylesheet">
+	<link href="css/colors/magenta-theme.css" rel="alternate stylesheet" title="magenta-theme">
 	<link href="css/colors/crocus-theme.css" rel="alternate stylesheet" title="crocus-theme">
 	<link href="css/colors/green-theme.css" rel="alternate stylesheet" title="green-theme">
 	<link href="css/colors/pink-theme.css" rel="alternate stylesheet" title="pink-theme">
@@ -41,6 +48,24 @@
 	<link href="css/colors/skyblue-theme.css" rel="alternate stylesheet" title="skyblue-theme">
 	<link href="css/colors/red-theme.css" rel="alternate stylesheet" title="red-theme">
 	<link href="css/colors/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
+
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					fontFamily: {
+						Jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+					}
+				}
+			}
+		}
+	</script>
+
+	<style>
+		/* Prevents conflict between Bootstrap lists and Tailwind */
+		ul { list-style: none; padding-left: 0; }
+		.wsmenu-list li { list-style: none; }
+	</style>
 </head>
 
 <body>
@@ -106,7 +131,7 @@
 	<!-- END SWITCHER -->
 	<!-- PAGE CONTENT
                   ============================================= -->
-	<div id="page" class="page font--jakarta">
+	<div id="page" class="page font-Jakarta">
 		<!-- HEADER
 				   ============================================= -->
 		<header id="header" class="white-menu navbar-dark light-hero-header white-scroll w-full block !pt-0">
@@ -180,8 +205,7 @@
 													<li class="fst-li"><a href="about.html">About Us</a></li>
 													<li><a href="reviews.html">Our Team</a></li>
 													 <li class="fst-li"><a href="blog-listing.html">Blog Listing</a></li>
-													<li><a href="careers.html">Careers <span
-																class="sm-info">4</span></a></li>
+                                                    
 													<li><a href="career-role.html">Career Details</a></li>
 													<li><a href="faqs.html">FAQs Page</a></li> 
 													<li><a href="contacts.html">Contact Us</a></li>
@@ -226,7 +250,7 @@
 							<li class="nl-simple" aria-haspopup="true"><a href="admissions.html" class="h-link">Admissions</a>
 								</li>
 
-								<li class="nl-simple" aria-haspopup="true"><a href="#" class="h-link">Mandatory Disclosure</a>
+								<li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a>
 								<li class="nl-simple" aria-haspopup="true">
 									<a href="contacts.html"
 										class="btn r-04 !rounded-[16px] btn--theme hover--tra-black last-link">Contact Us
@@ -1211,10 +1235,7 @@
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About
 											Us</a></p>
 								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="careers.html">Careers</a></p>
-								</li>
+
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="blog-listing.html">Our Blog</a></p>
@@ -1274,6 +1295,10 @@
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="privacy.html">Privacy Policy</a></p>
+								</li>
+								<li class=" w-auto block align-top clear-none !m-0 !p-0">
+									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+											href="mandatory-disclosure.html">Mandatory Disclosure</a></p>
 								</li>
 								<!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a

@@ -19,6 +19,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="images/Satyam_Icon_1.png">
 	<link rel="apple-touch-icon" href="images/Satyam_Icon_1.png">
 	<link rel="icon" href="images/Satyam_Icon_1.png" type="image/x-icon">
+
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 	<link href="css/flaticon.css" rel="stylesheet">
    <!-- FONT ICONS -->
    <link href="css/flaticon.css" rel="stylesheet">
@@ -43,6 +50,23 @@
    <link href="css/colors/skyblue-theme.css" rel="alternate stylesheet" title="skyblue-theme">
    <link href="css/colors/red-theme.css" rel="alternate stylesheet" title="red-theme">
    <link href="css/colors/violet-theme.css" rel="alternate stylesheet" title="violet-theme">
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: {
+                  Jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
+               }
+            }
+         }
+      }
+   </script>
+
+   <style>
+      ul { list-style: none; padding-left: 0; }
+      .wsmenu-list li { list-style: none; }
+   </style>
 </head>
 
 <body>
@@ -109,7 +133,7 @@
    <!-- END SWITCHER -->
    <!-- PAGE CONTENT
                   ============================================= -->
-   <div id="page" class="page font--jakarta">
+   <div id="page" class="page font-Jakarta">
        <!-- HEADER
 				   ============================================= -->
 		<header id="header" class="white-menu navbar-dark light-hero-header white-scroll w-full block !pt-0">
@@ -163,14 +187,13 @@
 								<!-- DROPDOWN SUB MENU -->
 								<li aria-haspopup="true">
 									<a href="single-post.html" class="h-link">Academics <span class="wsarrow"></span></a>
-									<ul class="sub-menu">
-										<!-- <li aria-haspopup="true"><a href="about.html">About us</a></li> -->
-										<li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
-										<li aria-haspopup="true"><a href="careers.html">Careers</a></li>
-										<li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
-										<li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
-										<li aria-haspopup="true"><a href="team.html">Our Team</a></li>
-									</ul>
+                           <ul class="sub-menu">
+                              <!-- <li aria-haspopup="true"><a href="about.html">About us</a></li> -->
+                              <li aria-haspopup="true"><a href="blog-listing.html">Blog Listing</a></li>
+                              <li aria-haspopup="true"><a href="faqs.html">FAQs Page</a></li>
+                              <li aria-haspopup="true"><a href="reviews.html">Testimonials</a></li>
+                              <li aria-haspopup="true"><a href="team.html">Our Team</a></li>
+                           </ul>
 								</li>
 
 								<!-- <li aria-haspopup="true" class="mg_link">
@@ -184,8 +207,7 @@
 													<li class="fst-li"><a href="about.html">About Us</a></li>
 													<li><a href="reviews.html">Our Team</a></li>
 													 <li class="fst-li"><a href="blog-listing.html">Blog Listing</a></li>
-													<li><a href="careers.html">Careers <span
-																class="sm-info">4</span></a></li>
+                                                    
 													<li><a href="career-role.html">Career Details</a></li>
 													<li><a href="faqs.html">FAQs Page</a></li> 
 													<li><a href="contacts.html">Contact Us</a></li>
@@ -227,17 +249,14 @@
 								<!-- SIMPLE NAVIGATION LINK -->
 								
 								<!-- SIMPLE NAVIGATION LINK -->
-								<li class="nl-simple" aria-haspopup="true"><a href="#faqs-3" class="h-link">Admissions</a>
-								</li>
-								<!-- SIGN IN LINK -->
-								<!-- <li class="nl-simple reg-fst-link mobile-last-link" aria-haspopup="true">
-									<a href="login-2.html" class="h-link">Mandatory Disclosure</a>
-								</li> -->
-								<!-- SIGN UP BUTTON -->
-								<li class="nl-simple" aria-haspopup="true">
-									<a href="contacts.html"
-										class="btn r-04 !rounded-[4px] btn--theme hover--tra-black last-link">Contact Us
-										</a>
+                        <li class="nl-simple" aria-haspopup="true"><a href="#faqs-3" class="h-link">Admissions</a>
+                        </li>
+                        <li class="nl-simple" aria-haspopup="true"><a href="mandatory-disclosure.html" class="h-link">Mandatory Disclosure</a></li>
+                        <!-- SIGN UP BUTTON -->
+                        <li class="nl-simple" aria-haspopup="true">
+                           <a href="contacts.html"
+                              class="btn r-04 !rounded-[4px] btn--theme hover--tra-black last-link">Contact Us
+                              </a>
 								</li>
 							</ul>
 						</nav>
@@ -481,7 +500,7 @@
                         <!-- Post Link -->
                         <h6
                            class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
-                           <a class="text-[#353f4f] hover:!underline" href="single-post.html">How Our School Builds Tomorrow's Leaders: A Complete Guide to Student Personality Development</a>
+                           <a class="text-[#353f4f] hover:!underline" href="single-post3.html">How Our School Builds Tomorrow's Leaders: A Complete Guide to Student Personality Development</a>
                         </h6>
                         <!-- Text -->
                         <p class="!mb-0">As a parent, you see beyond the report card. You notice the subtle signs that reveal your child's inner world. 
@@ -545,10 +564,7 @@
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="about.html">About
 											Us</a></p>
 								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="careers.html">Careers</a></p>
-								</li>
+
 								<li class=" w-auto block align-top clear-none !m-0 !p-0">
 									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
 											href="blog-listing.html">Our Blog</a></p>
@@ -600,22 +616,26 @@
 								class="s-17 w--700 xl:!text-[1.0625rem] lg:max-xl:!text-[1.0625rem] leading-none xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!text-[1.17647rem] md:max-lg:!mb-[16px] sm:max-md:!text-[1.21875rem] sm:max-md:!mb-[20px] xsm:max-sm:!text-[1.21875rem] xsm:max-sm:!mb-[20px] font-Jakarta !font-bold">
 								Legal</h6>
 							<!-- Links -->
-							<ul class="foo-links clearfix">
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
-											of Use</a></p>
-								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="privacy.html">Privacy Policy</a></p>
-								</li>
-								<!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
-											href="">Cookie Policy</a></p>
-								</li>
-								<li class=" w-auto block align-top clear-none !m-0 !p-0">
-									<p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
-								</li> -->
+                     <ul class="foo-links clearfix">
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="privacy.html">Terms
+                                 of Use</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="privacy.html">Privacy Policy</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="mandatory-disclosure.html">Mandatory Disclosure</a></p>
+                        </li>
+                        <!-- <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a
+                                 href="">Cookie Policy</a></p>
+                        </li>
+                        <li class=" w-auto block align-top clear-none !m-0 !p-0">
+                           <p class=" !font-normal !mb-[10px] md:max-lg:!mb-[8px]"><a href="#">Site Map</a></p>
+                        </li> -->
 							</ul>
 						</div>
 					</div>
