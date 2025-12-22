@@ -1,0 +1,56 @@
+<!-- Chatbot Widget HTML -->
+<button id="chat-toggle" aria-label="Toggle chat">
+  <span id="toggle-icon">🤖</span>
+  <span class="notification-badge" id="notification">1</span>
+</button>
+<div id="chat-container">
+  <div class="chat-header">
+    <div class="bot-avatar">🤖</div>
+    <div class="header-info">
+      <h3>Satyam Assistant</h3>
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>Online • Ready to help</span>
+      </div>
+    </div>
+  </div>
+  <div class="quick-actions">
+    <button class="quick-btn" onclick="sendQuickMessage('admission')">📚 Admission</button>
+    <button class="quick-btn" onclick="sendQuickMessage('fee')">💰 Fees</button>
+    <button class="quick-btn" onclick="sendQuickMessage('location')">📍 Location</button>
+    <button class="quick-btn" onclick="sendQuickMessage('contact')">📞 Contact</button>
+  </div>
+  <div class="chat-messages" id="messages">
+    <div class="welcome-message">
+      <h4>👋 Welcome to Satyam International School!</h4>
+      <p>I'm here to help you with admissions, fees, facilities, and more. Feel free to ask anything!</p>
+    </div>
+    <div class="message bot">
+      <div class="message-avatar">🤖</div>
+      <div class="message-content">
+        <div class="message-bubble">
+          Hello! How can I assist you today? You can ask about admissions, fees, facilities, or anything else.
+        </div>
+        <div class="message-time">Just now</div>
+      </div>
+    </div>
+    <div class="message bot">
+      <div class="message-avatar">🤖</div>
+      <div class="typing-indicator" id="typing">
+        <div class="typing-dots">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chat-input">
+    <div class="input-wrapper">
+      <input type="text" id="message-input" placeholder="Type your message..." autocomplete="off">
+    </div>
+    <button id="send-button" aria-label="Send message">
+      <span>➤</span>
+    </button>
+  </div>
+</div>

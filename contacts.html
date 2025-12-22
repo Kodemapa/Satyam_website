@@ -1,3 +1,19 @@
+     <!-- Chatbot Widget Start -->
+     <link rel="stylesheet" href="assests/css/chatbot.css">
+     <div id="chatbot-widget-container"></div>
+     <script>
+         fetch('assests/chatbot-widget.html')
+             .then(response => response.text())
+             .then(html => {
+                 document.getElementById('chatbot-widget-container').innerHTML = html;
+                 var script = document.createElement('script');
+                 script.src = 'assests/js/chatbot.js';
+                 document.body.appendChild(script);
+             });
+     </script>
+     <!-- Chatbot Widget End -->
+<!doctype html>
+<html lang="en">
 <!doctype html>
 <!-- Martex - Tailwind CSS Software, SaaS & Startup Template design by elite-themes24 () -->
 <!--[if lt IE 7 ]>
